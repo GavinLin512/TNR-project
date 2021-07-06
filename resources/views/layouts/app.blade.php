@@ -48,9 +48,9 @@
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-start">
                     <a class="navbar-brand brand-logo" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/cms.svg') }}" alt="logo" class="w-25 mx-4 mt-2" style=""/> </a>
+                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" class="w-75 m-auto mt-4" style=""/> </a>
                     <a class="navbar-brand brand-logo-mini" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/cms.svg') }}" alt="logo" /> </a>
+                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" /> </a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
                     {{-- <ul class="navbar-nav">
