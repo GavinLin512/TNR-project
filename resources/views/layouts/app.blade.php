@@ -46,11 +46,11 @@
         <div class="container-scroller">
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-                <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-start">
                     <a class="navbar-brand brand-logo" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/logo.svg') }}" alt="logo" /> </a>
+                        <img src="{{ asset('img/nav/cms.svg') }}" alt="logo" class="w-25 mx-4 mt-2" style=""/> </a>
                     <a class="navbar-brand brand-logo-mini" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/logo-mini.svg') }}" alt="logo" /> </a>
+                        <img src="{{ asset('img/nav/cms.svg') }}" alt="logo" /> </a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
                     {{-- <ul class="navbar-nav">
@@ -74,17 +74,17 @@
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
                                 aria-labelledby="notificationDropdown">
                                 <a class="dropdown-item py-3 border-bottom">
-                                    <p class="mb-0 font-weight-medium float-left">You have 3 new notifications </p>
-                                    <span class="badge badge-pill badge-primary float-right">View all</span>
+                                    <p class="mb-0 font-weight-medium float-left">你有 3 項通知 </p>
+                                    <span class="badge badge-pill badge-primary float-right">查看更多</span>
                                 </a>
                                 <a class="dropdown-item preview-item py-3">
                                     <div class="preview-thumbnail">
                                         <i class="mdi mdi-alert m-auto text-primary"></i>
                                     </div>
                                     <div class="preview-item-content">
-                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error
+                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">會員管理錯誤
                                         </h6>
-                                        <p class="font-weight-light small-text mb-0"> Just now </p>
+                                        <p class="font-weight-light small-text mb-0"> 未成功新增會員 </p>
                                     </div>
                                 </a>
                                 <a class="dropdown-item preview-item py-3">
@@ -92,8 +92,8 @@
                                         <i class="mdi mdi-settings m-auto text-primary"></i>
                                     </div>
                                     <div class="preview-item-content">
-                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
-                                        <p class="font-weight-light small-text mb-0"> Private message </p>
+                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">設定</h6>
+                                        <p class="font-weight-light small-text mb-0"> 個人訊息 </p>
                                     </div>
                                 </a>
                                 <a class="dropdown-item preview-item py-3">
@@ -101,10 +101,9 @@
                                         <i class="mdi mdi-airballoon m-auto text-primary"></i>
                                     </div>
                                     <div class="preview-item-content">
-                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">New user
-                                            registration
+                                        <h6 class="preview-subject font-weight-normal text-dark mb-1">新會員增加
                                         </h6>
-                                        <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+                                        <p class="font-weight-light small-text mb-0"> 2 天前 </p>
                                     </div>
                                 </a>
                             </div>
@@ -151,7 +150,7 @@
                                     <div class="preview-item-content flex-grow py-2">
                                         <p class="preview-subject ellipsis font-weight-medium text-dark">周建豪
                                         </p>
-                                        <p class="font-weight-light small-text"></p>
+                                        <p class="font-weight-light small-text">關於貓咪領養...</p>
                                     </div>
                                 </a>
                             </div>
@@ -166,14 +165,14 @@
                                 <div class="dropdown-header text-center">
                                     <img class="img-md rounded-circle" src="{{ asset('img/nav/face/face8.jpg') }}"
                                         alt="Profile image">
-                                    <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                                    <p class="mb-1 mt-3 font-weight-semibold">林向睿</p>
                                     <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
                                 </div>
-                                <a class="dropdown-item">My Profile <span
+                                <a class="dropdown-item">我的個人檔案 <span
                                         class="badge badge-pill badge-danger">1</span><i
                                         class="dropdown-item-icon ti-dashboard"></i></a>
-                                <a class="dropdown-item">Messages<i class="dropdown-item-icon ti-comment-alt"></i></a>
-                                <a class="dropdown-item">Activity<i
+                                <a class="dropdown-item">訊息<i class="dropdown-item-icon ti-comment-alt"></i></a>
+                                <a class="dropdown-item">活動<i
                                         class="dropdown-item-icon ti-location-arrow"></i></a>
                                 <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -382,14 +381,14 @@
                                     <h4 class="page-title" style="w">管理總覽</h4>
                                     <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
                                         <ul class="quick-links">
-                                            <li><a href="#">ICE Market data</a></li>
+                                            {{-- breadcrumb --}}
+                                            {{-- <li><a href="#">ICE Market data</a></li>
                                             <li><a href="#">Own analysis</a></li>
-                                            <li><a href="#">Historic market data</a></li>
+                                            <li><a href="#">Historic market data</a></li> --}}
                                         </ul>
+                                        {{-- setting --}}
                                         <ul class="quick-links ml-auto">
-                                            <li><a href="#">Settings</a></li>
-                                            <li><a href="#">Analytics</a></li>
-                                            <li><a href="#">Watchlist</a></li>
+                                            <li><a href="#">設定</a></li>
                                         </ul>
                                     </div>
                                 </div>
