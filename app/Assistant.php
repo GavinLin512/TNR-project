@@ -16,7 +16,7 @@ class Assistant extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -25,5 +25,10 @@ class Assistant extends Model
      * @var array
      */
     protected $fillable = ['assistant_category_id', 'name', 'address', 'created_at', 'updated_at'];
+
+    public function category()
+    {
+        return $this->hasOne('App\Assistant_category', 'id', 'assistant_category_id');
+    }
 
 }

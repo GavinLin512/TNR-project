@@ -14,7 +14,7 @@ class ProductCategory extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -23,5 +23,10 @@ class ProductCategory extends Model
      * @var array
      */
     protected $fillable = ['category', 'created_at', 'updated_at'];
+
+    public function products()
+    {
+        return $this->hasMany('App\Product', 'product_category_id', 'id');
+    }
 
 }
