@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('admin')->group(function () {
-    Route::get('home', function () {
+    Route::get('/home', function () {
         return view('layouts.app');
     });
 });

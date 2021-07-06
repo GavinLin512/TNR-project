@@ -47,10 +47,10 @@
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-start">
-                    <a class="navbar-brand brand-logo" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" class="w-100 px-2 mt-4" style=""/> </a>
+                    <a class="navbar-brand brand-logo p-0" href="{{ asset('/index') }}">
+                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" class="w-100 px-2 mt-4" style="" /> </a>
                     <a class="navbar-brand brand-logo-mini" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" /> </a>
+                        <img src="{{ asset('img/nav/logo-mini.svg') }}" alt="logo" class="w-100 px-2" /> </a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
                     {{-- <ul class="navbar-nav">
@@ -59,11 +59,11 @@
 
                 </li> --}}
                     </ul>
-                    <form class="ml-auto search-form d-none d-md-block" action="#">
+                    {{-- <form class="ml-auto search-form d-none d-md-block" action="#">
                         <div class="form-group">
                             <input type="search" class="form-control" placeholder="搜尋...">
                         </div>
-                    </form>
+                    </form> --}}
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown"
@@ -168,12 +168,10 @@
                                     <p class="mb-1 mt-3 font-weight-semibold">林向睿</p>
                                     <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
                                 </div>
-                                <a class="dropdown-item">我的個人檔案 <span
-                                        class="badge badge-pill badge-danger">1</span><i
+                                <a class="dropdown-item">我的個人檔案 <span class="badge badge-pill badge-danger">1</span><i
                                         class="dropdown-item-icon ti-dashboard"></i></a>
                                 <a class="dropdown-item">訊息<i class="dropdown-item-icon ti-comment-alt"></i></a>
-                                <a class="dropdown-item">活動<i
-                                        class="dropdown-item-icon ti-location-arrow"></i></a>
+                                <a class="dropdown-item">活動<i class="dropdown-item-icon ti-location-arrow"></i></a>
                                 <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">Sign Out
@@ -210,7 +208,9 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item nav-category">Main Menu</li>
+                        <li class="nav-item nav-category mb-2">Main Menu</li>
+                        </li>
+                        {{-- all --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ asset('/admin/home') }}">
                                 <i class="menu-icon typcn typcn-document-text"></i>
