@@ -87,7 +87,7 @@
                                         <p class="font-weight-light small-text mb-0"> 未成功新增會員 </p>
                                     </div>
                                 </a>
-                                <a class="dropdown-item preview-item py-3">
+                                {{-- <a class="dropdown-item preview-item py-3">
                                     <div class="preview-thumbnail">
                                         <i class="mdi mdi-settings m-auto text-primary"></i>
                                     </div>
@@ -95,7 +95,7 @@
                                         <h6 class="preview-subject font-weight-normal text-dark mb-1">設定</h6>
                                         <p class="font-weight-light small-text mb-0"> 個人訊息 </p>
                                     </div>
-                                </a>
+                                </a> --}}
                                 <a class="dropdown-item preview-item py-3">
                                     <div class="preview-thumbnail">
                                         <i class="mdi mdi-airballoon m-auto text-primary"></i>
@@ -108,7 +108,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link count-indicator" id="notificationDropdown" href="#"
                                 data-toggle="dropdown">
                                 <i class="mdi mdi-email-outline"></i>
@@ -154,7 +154,7 @@
                                     </div>
                                 </a>
                             </div>
-                        </li>
+                        </li> --}}
                         <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
                             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
                                 aria-expanded="false">
