@@ -48,7 +48,7 @@
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-start">
                     <a class="navbar-brand brand-logo" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" class="w-75 m-auto mt-4" style=""/> </a>
+                        <img src="{{ asset('img/nav/logo.png') }}" alt="logo" class="w-100 px-2 mt-4" style=""/> </a>
                     <a class="navbar-brand brand-logo-mini" href="{{ asset('/index') }}">
                         <img src="{{ asset('img/nav/logo.png') }}" alt="logo" /> </a>
                 </div>
