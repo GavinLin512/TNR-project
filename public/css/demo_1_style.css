@@ -535,7 +535,7 @@
       .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) .menu-title {
         color: #fff; }
       .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) .menu-arrow:before {
-        color: #bfccda; }
+        color: #ffffff; }
 
 /* style for off-canvas menu*/
 @media screen and (max-width: 991px) {
