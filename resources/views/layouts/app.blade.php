@@ -174,12 +174,14 @@
                                 <a class="dropdown-item">活動<i class="dropdown-item-icon ti-location-arrow"></i></a>
                                 <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                  document.getElementById('logout-form').submit();">Sign Out
-                                    <i class="dropdown-item-icon ti-power-off"></i>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                        style="display: none;">
-                                        @csrf
-                                    </form>
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Sign out') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
                                 </a>
                             </div>
                         </li>
@@ -212,7 +214,7 @@
                         </li>
                         {{-- all --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ asset('/admin/home') }}">
+                            <a class="nav-link" href="{{ asset('/admin/home') }}" aria-controls="all">
                                 <i class="menu-icon typcn typcn-document-text"></i>
                                 <span class="menu-title">管理總覽</span>
                             </a>
