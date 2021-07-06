@@ -433,10 +433,11 @@
                                 </div> --}}
                             </div>
                         </div>
+                        {{-- main area --}}
+                        @yield('main')
+                        @yield('content')
                     </div>
                     <!-- Page Title Header Ends-->
-
-                    @yield('content')
                 </main>
             </div>
         </div>

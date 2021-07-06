@@ -18,9 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::prefix('admin')->group(function () {
     Route::get('/home', function () {
         return view('layouts.app');
+    });
+    Route::get('/login', function () {
+        return view('login');
     });
 });
 

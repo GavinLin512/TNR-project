@@ -8637,7 +8637,8 @@ pre {
   background: #333333;
   color: #ffffff; }
   .btn-github:hover {
-    background: #1a1a1a; }
+    background: #1a1a1a;
+    color: #ffffff; }
   .btn-github.btn-link {
     background: none;
     color: #333333; }
@@ -9765,7 +9766,7 @@ ul {
   .auth.theme-one .auto-form-wrapper {
     background: #fff;
     padding: 40px 40px 10px;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07); }
     .auth.theme-one .auto-form-wrapper .form-group .input-group {
       height: 44px; }
@@ -9810,18 +9811,18 @@ ul {
       margin-right: 10px;
       line-height: 1;
       padding-right: 10px;
-      border-right: 1px solid rgba(255, 255, 255, 0.4); }
+      border-right: 1px solid rgba(253, 84, 17, 0.87); }
       .auth.theme-one .auth-footer li:last-child {
         margin-right: 0;
         border-right: none; }
       .auth.theme-one .auth-footer li a {
         font-size: 13px;
-        color: rgba(255, 255, 255, 0.4); }
+        color: rgba(253, 84, 17, 0.87); }
     @media (max-width: 576px) {
       .auth.theme-one .auth-footer {
         justify-content: center; } }
   .auth.theme-one .footer-text {
-    color: rgba(255, 255, 255, 0.4); }
+    color: rgba(253, 84, 17, 0.87); }
 
 /* Error */
 .error-page {
