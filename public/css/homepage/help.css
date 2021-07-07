@@ -1,0 +1,323 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  font-weight: unset;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container170 {
+  padding: 0 170px;
+}
+
+.container140 {
+  padding: 0 140px;
+}
+
+nav .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 7.3% 0;
+}
+
+nav .nav .logo {
+  width: 511px;
+  height: 83.5px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav .nav .menu {
+  font-size: 100px;
+  line-height: 50px;
+  position: fixed;
+  right: 7.3%;
+  top: 40px;
+  height: 37px;
+  z-index: 99;
+}
+
+nav .nav .menu .burger {
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: relative;
+}
+
+nav .nav .menu .burger::before, nav .nav .menu .burger::after {
+  content: "";
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #4f4f4f;
+  position: absolute;
+  top: 15px;
+}
+
+nav .nav .menu .burger::after {
+  top: 30px;
+}
+
+nav .nav .menu:hover .burger,
+nav .nav .menu:hover .burger::after,
+nav .nav .menu:hover .burger::before {
+  background-color: #ff7950;
+}
+
+.first-section {
+  position: relative;
+}
+
+.first-section .mt-200 {
+  margin-top: 200px !important;
+}
+
+.first-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+}
+
+.first-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.first-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+.first-section .background {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+.first-section .background img:nth-child(1) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.first-section .background img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 37px;
+  z-index: 2;
+}
+
+.first-section .background img:nth-child(3) {
+  position: absolute;
+  left: 17%;
+  top: 25px;
+}
+
+.first-section .swiper-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-section .swiper-group .buttons {
+  width: 21%;
+  height: 752px;
+  background-color: #ffa183;
+  margin-top: 212px;
+  border-radius: 0 0 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+}
+
+.first-section .swiper-group .buttons .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.first-section .swiper-group .buttons .dropdown .btn {
+  width: 73%;
+  height: 101px;
+  border-radius: 30px;
+  background-color: #ff7950;
+  font-size: 36px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.first-section .swiper-group .buttons .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff7950;
+  min-width: 73%;
+  z-index: 1;
+  border-radius: 0 0 30px 30px;
+}
+
+.first-section .swiper-group .buttons .dropdown .dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+}
+
+.first-section .swiper-group .buttons .dropdown .dropdown-content a:hover {
+  background-color: #ffa183;
+  border-radius: 0 0 30px 30px;
+}
+
+.first-section .swiper-group .buttons .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.first-section .swiper-group .buttons .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.first-section .swiper-group .mySwiper {
+  width: 1400px;
+  height: 664px;
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
+}
+
+.first-section .swiper-group .mySwiper .card-img .img {
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+}
+
+.first-section .swiper-group .mySwiper .card-img .img-shadow {
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url("/img/first-section/米色背景.jpg");
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+.first-section .swiper-group .mySwiper .card-major {
+  width: 100%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first-section .swiper-group .mySwiper .card-major div:nth-child(1) {
+  width: 136px;
+  height: 48px;
+  font-size: 18px;
+  border: 2px solid #f2a589;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-section .swiper-group .mySwiper .card-major .fb-icon {
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #6d9ffe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.first-section .swiper-group .mySwiper .card-text {
+  margin: 20px 0 28px 62px;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.first-section .swiper-group .mySwiper .card-text .card-item {
+  color: #707070;
+}
+
+.first-section .swiper-group .mySwiper .card-text .card-item-vlaue {
+  color: #4f4f4f;
+}
+
+.first-section .swiper-group .mySwiper .card-text .card-slash {
+  margin: 0 11px;
+  color: #ee8e74;
+}
+
+.first-section .swiper-group .mySwiper .btn {
+  margin: auto;
+  width: 232px;
+  height: 67px;
+  background-color: #ff7950;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=help.css.map */

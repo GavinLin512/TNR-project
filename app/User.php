@@ -15,8 +15,13 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    //  //  常數命名規則為全大寫
+    // const ROLE_ADMIN = 'admin';
+    // const ROLE_USER = 'user';
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role'
     ];
 
     /**

@@ -31,106 +31,119 @@
                 style="background-image: url({{ asset('img/auth/login_3_1.jpg') }});">
                 <div class="row w-100">
                     <div class="col-lg-4 mx-auto">
-                        <h2 class="text-center text-avatar text-google mb-4">註冊</h2>
+                        <h2 class="text-center text-avatar text-google mb-4">會員註冊</h2>
                         <div class="auto-form-wrapper">
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 {{-- name --}}
-                                <div class="form-group">
+                                <div class="form-group mb-4">
                                     <div class="input-group">
                                         <label for="name"
-                                            class="col-3 col-form-label text-md-left mt-1">{{ __('姓名') }}</label>
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('姓名') }}</label>
                                         <input id="name" type="text"
                                             class="form-control @error('name') is-invalid @enderror" name="name"
                                             value="{{ old('name') }}" required autocomplete="name" autofocus
                                             placeholder="請填入使用者姓名">
 
                                         @error('name')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
+                                            <span class="invalid-feedback ml-5 pl-5" role="alert">
+                                                <strong class="ml-5">{{ $message }}</strong>
                                             </span>
                                         @enderror
-
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
+
+                                {{-- nick_name --}}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <label for="nick-name"
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('暱稱') }}</label>
+                                        <input id="nick-name" type="text"
+                                            class="form-control @error('name') is-invalid @enderror" name="nick-name"
+                                            value="{{ old('nick-name') }}" required autocomplete="nick-name"
+                                            autofocus placeholder="請填入使用者姓名">
+
+                                        @error('name')
+                                            <span class="invalid-feedback ml-5 pl-5" role="alert">
+                                                <strong class="ml-5">{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
                                 {{-- Email --}}
-                                <div class="form-group">
+                                <div class="form-group mb-4">
                                     <div class="input-group">
                                         <label for="email"
-                                            class="col-3 col-form-label text-md-left mt-1">{{ __('Email 地址') }}</label>
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('Email 地址') }}</label>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" required autocomplete="email"
                                             placeholder="請填入常用電子信箱">
 
                                         @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
+                                            <span class="invalid-feedback ml-5 pl-5 " role="alert">
+                                                <strong class="ml-5">{{ $message }}</strong>
                                             </span>
                                         @enderror
-
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
+
                                 {{-- password --}}
-                                <div class="form-group">
+                                <div class="form-group mb-4">
                                     <div class="input-group">
                                         <label for="password"
-                                            class="col-3 col-form-label text-md-left mt-1">{{ __('密碼') }}</label>
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('密碼') }}</label>
                                         <input id="password" type="password"
                                             class="form-control @error('password') is-invalid @enderror" name="password"
                                             required autocomplete="new-password" placeholder="請填入密碼">
                                         @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
+                                            <span class="invalid-feedback ml-5 pl-5" role="alert">
+                                                <strong class="ml-5">{{ $message }}</strong>
                                             </span>
                                         @enderror
-
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
+
                                 {{-- password confirm --}}
-                                <div class="form-group">
+                                <div class="form-group mb-4">
                                     <div class="input-group">
                                         <label for="password-confirm"
-                                            class="col-3 col-form-label text-md-left mt-1">{{ __('再次確認密碼') }}</label>
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('再次確認密碼') }}</label>
                                         <input id="password-confirm" type="password" class="form-control"
                                             name="password_confirmation" required autocomplete="new-password"
                                             placeholder="請再次填入密碼">
-
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
-                                {{-- <div class="form-group d-flex justify-content-center">
-                                    <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" checked> I agree to the
-                                            terms </label>
+
+                                {{-- phone --}}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <label for="phone"
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('電話') }}</label>
+                                        <input id="phone" type="phone" class="form-control" name="phone"
+                                            value="{{ old('phone') }}" required autocomplete="phone"
+                                            placeholder="請填入常用聯絡電話">
                                     </div>
-                                </div> --}}
+                                </div>
+
+                                {{-- address --}}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <label for="address"
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('地址') }}</label>
+                                        <input id="address" type="address" class="form-control" name="address"
+                                            value="{{ old('address') }}" required autocomplete="address"
+                                            placeholder="請填入通訊地址">
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-github submit-btn btn-block">註冊</button>
                                 </div>
                                 <div class="text-block text-center my-3">
                                     <span class="text-google font-weight-semibold">已經有帳號了嗎？</span>
-                                    <a href="login.html" class="text-black">登入</a>
+                                    <a href="{{ asset('/TNR-index/login') }}" class="text-black">登入</a>
                                 </div>
                             </form>
                         </div>

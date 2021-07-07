@@ -28,6 +28,7 @@
                 style="background-image: url({{ asset('img/auth/login_3_1.jpg') }});">
                 <div class="row w-100">
                     <div class="col-lg-4 mx-auto">
+                        <h2 class="text-center text-avatar text-google mb-4">登入</h2>
                         <div class="auto-form-wrapper">
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -61,18 +62,11 @@
                                         @enderror
                                     </div>
                                 </div>
+                                {{-- btns --}}
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-github submit-btn btn-block">登入</button>
                                 </div>
                                 <div class="form-group d-flex justify-content-between">
-                                    {{-- <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label" for="remember">
-                                            <input type="checkbox" class="form-check-input" name="remember"
-                                                id="remember" {{ old('remember') ? 'checked' : '' }} checked> 讓我保持登入
-                                            <i class="input-helper"></i>
-                                        </label>
-
-                                    </div> --}}
                                     <div class="form-check form-check-flat mt-0">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -87,13 +81,9 @@
                                         </a>
                                     @endif
                                 </div>
-                                {{-- <div class="form-group">
-                    <button class="btn btn-block g-login">
-                      <img class="mr-3" src="../../../assets/images/file-icons/icon-google.svg" alt="">Log in with Google</button>
-                  </div> --}}
                                 <div class="text-block text-center my-3">
                                     <span class="text-google font-weight-semibold">還不是會員嗎 ?</span>
-                                    <a href="register.html" class="text-black">創建會員帳號</a>
+                                    <a href="{{ asset('/TNR-index/register') }}" class="text-black">創建會員帳號</a>
                                 </div>
                             </form>
                         </div>

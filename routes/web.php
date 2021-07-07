@@ -14,18 +14,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::prefix('TNR-index')->group(function () {
+    Route::get('/', 'FrontController@index');
+    Route::get('/login', 'FrontController@login');
+    Route::get('/register', 'FrontController@register');
 });
 
+Route::middleware(['auth'])->group(function () {
+    // TNR-admin
+    Route::prefix('TNR-admin')->group(function(){
+        Route::get('/dashboard', 'AdminController@index');
+    });
 
+    // user
+    Route::prefix('TNR-index')->group(function () {
+        Route::get('/', 'FrontController@index');
+        Route::get('/login', 'FrontController@login');
+        Route::get('/register', 'FrontController@register');
+    });
+
+});
 
 Route::prefix('admin')->group(function () {
-    Route::get('/home', function () {
-        return view('layouts.app');
-    });
+
     Route::get('/login', function () {
         return view('login');
+    });
+    Route::get('/register', function () {
+        return view('register');
     });
 });
 
