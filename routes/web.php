@@ -27,16 +27,37 @@ Route::prefix('TNR-index')->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     // TNR-admin
-    Route::prefix('TNR-admin')->group(function(){
+    Route::prefix('TNR-admin')->group(function () {
         Route::get('/dashboard', 'AdminController@index');
 
         Route::prefix('/user')->group(function () {
-                Route::get('/', 'UserController@index');
-                Route::get('/create', 'UserController@create');
-                Route::post('/store', 'UserController@store');
-                Route::get('/edit/{id}', 'UserController@edit');
-                Route::post('/update/{id}', 'UserController@update');
-                Route::delete('/delete/{id}', 'UserController@delete');
+            Route::get('/', 'UserController@index');
+            Route::post('/store', 'UserController@store');
+            Route::post('/update/{id}', 'UserController@update');
+            Route::delete('/delete/{id}', 'UserController@delete');
+        });
+        Route::get('/user_create', 'UserController@create');
+        Route::get('/user_edit', 'UserController@editIndex');
+        Route::get('/user_edit/{id}', 'UserController@edit');
+
+        Route::prefix('/story')->group(function () {
+            Route::get('/', 'StoryController@index');
+            Route::get('/create', 'StoryController@create');
+            Route::post('/store', 'StoryController@store');
+            Route::get('/edit', 'StoryController@editIndex');
+            Route::get('/edit/{id}', 'StoryController@edit');
+            Route::post('/update/{id}', 'StoryController@update');
+            Route::delete('/delete/{id}', 'StoryController@delete');
+        });
+
+        Route::prefix('/news')->group(function () {
+            Route::get('/', 'NewsController@index');
+            Route::get('/create', 'NewsController@create');
+            Route::post('/store', 'NewsController@store');
+            Route::get('/edit', 'NewsController@editIndex');
+            Route::get('/edit/{id}', 'NewsController@edit');
+            Route::post('/update/{id}', 'NewsController@update');
+            Route::delete('/delete/{id}', 'NewsController@delete');
         });
 
         Route::prefix('/product')->group(function () {
@@ -75,4 +96,4 @@ Route::middleware(['auth'])->group(function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

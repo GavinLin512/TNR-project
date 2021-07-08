@@ -237,10 +237,10 @@
                                         <a class="nav-link" href="{{ asset('/TNR-admin/user') }}">會員總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/user/create') }}">新增會員</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/user_create') }}">新增會員</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/user/edit') }}">編輯會員</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/user_edit') }}">編輯會員</a>
                                     </li>
                                 </ul>
                             </div>
@@ -256,13 +256,13 @@
                             <div class="collapse" id="news">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/news') }}">最新消息總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/news') }}">最新消息總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/news/create') }}">新增最新消息</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/news/create') }}">新增最新消息</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/news/edit') }}">編輯最新消息</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/news/edit') }}">編輯最新消息</a>
                                     </li>
                                 </ul>
                             </div>
@@ -386,7 +386,7 @@
                                 {{-- breadcrumb --}}
                                 <div class="page-header">
                                     @yield('page-header')
-                                    {{-- <h4 class="page-title" style="w">管理總覽</h4>
+                                    {{-- <h4 class="page-title">管理總覽</h4>
                                     <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
                                         <ul class="quick-links">
                                             <li><a href="#">ICE Market data</a></li>
@@ -438,6 +438,11 @@
                             </div>
                         </div>
                         {{-- main area --}}
+                        @if (Session::has('message'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ Session::get('message') }}
+                                </div>
+                        @endif
                         @yield('main')
                         @yield('content')
                     </div>
@@ -452,17 +457,17 @@
     <script src="{{ asset('/js/app.js') }}"></script>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="/js/vendor.bundle.base.js"></script>
-    <script src="/js/vendor.bundle.addons.js"></script>
+    <script src="{{ asset('js/vendor.bundle.base.js') }}"></script>
+    <script src="{{ asset('js/vendor.bundle.addons.js') }}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page-->
     <!-- End plugin js for this page-->
     <!-- inject:js -->
-    <script src="/js/off-canvas.js"></script>
-    <script src="/js/misc.js"></script>
+    <script src="{{ asset('js/off-canvas.js') }}"></script>
+    <script src="{{ asset('js/misc.js') }}"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script src="/js/dashboard.js"></script>
+    <script src="{{ asset('js/dashboard.js') }}"></script>
     <!-- End custom js for this page-->
     <script src="jquery.cookie.js" type="text/javascript"></script>
 

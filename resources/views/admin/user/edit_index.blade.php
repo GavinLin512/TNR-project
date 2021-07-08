@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TNR會員管理')
+@section('title', 'TNR編輯會員')
 
 @section('css')
 
@@ -12,7 +12,7 @@
         <ul class="quick-links">
             <li><a href="{{ asset('TNR-admin/dashboard') }}">管理總覽</a></li>
             <li><a class="text-muted">會員管理</a></li>
-            <li><a class="text-muted" aria-current="page">會員總覽</a></li>
+            <li><a class="text-muted" aria-current="page">編輯會員</a></li>
         </ul>
         <ul class="quick-links ml-auto">
             <li><a href="#">設定</a></li>
@@ -25,7 +25,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h2>{{ __('會員總覽') }}</h2>
+                    <h2>{{ __('編輯會員') }}</h2>
                 </div>
                 <div class="card-body">
                     <table id="my-datatable" class="display table-hover" style="width:100%">
@@ -37,6 +37,7 @@
                                 <th>角色</th>
                                 <th>電話</th>
                                 <th>地址</th>
+                                <th>操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,6 +51,17 @@
                                     {{-- ??'' 如果找不到資料就顯示空白，防呆用 --}}
                                     <td>{{ $item->client->phone ?? '' }}</td>
                                     <td>{{ $item->client->address ?? '' }}</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-sm"
+                                            href="{{ asset('/TNR-admin/user/edit') }}/{{ $item->id }}">編輯</a>
+                                        <form style="display: inline-block"
+                                            action="{{ asset('/TNR-admin/user/delete') }}/{{ $item->id }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('delete')
+                                            <button class="btn btn-danger btn-sm">刪除</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -61,6 +73,7 @@
                                 <th>角色</th>
                                 <th>電話</th>
                                 <th>地址</th>
+                                <th>操作</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -81,3 +94,32 @@
         });
     </script>
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
