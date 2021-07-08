@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('TNR-index')->group(function () {
     Route::get('/', 'FrontController@index');
+    // 可以寫個 middleware 防止登入後進到這兩個頁面
     Route::get('/login', 'FrontController@login');
     Route::get('/register', 'FrontController@register');
 });
@@ -28,26 +29,49 @@ Route::middleware(['auth'])->group(function () {
     // TNR-admin
     Route::prefix('TNR-admin')->group(function(){
         Route::get('/dashboard', 'AdminController@index');
-    });
 
-    // user
-    Route::prefix('TNR-index')->group(function () {
-        Route::get('/', 'FrontController@index');
-        Route::get('/login', 'FrontController@login');
-        Route::get('/register', 'FrontController@register');
-    });
+        Route::prefix('/user')->group(function () {
+                Route::get('/', 'UserController@index');
+                Route::get('/create', 'UserController@create');
+                Route::post('/store', 'UserController@store');
+                Route::get('/edit/{id}', 'UserController@edit');
+                Route::post('/update/{id}', 'UserController@update');
+                Route::delete('/delete/{id}', 'UserController@delete');
+        });
 
+        Route::prefix('/product')->group(function () {
+
+            Route::prefix('/category')->group(function () {
+                Route::get('/', 'ProductCategoryController@index');
+                Route::get('/create', 'ProductCategoryController@create');
+                Route::post('/store', 'ProductCategoryController@store');
+                Route::get('/edit/{id}', 'ProductCategoryController@edit');
+                Route::post('/update/{id}', 'ProductCategoryController@update');
+                Route::delete('/delete/{id}', 'ProductCategoryController@delete');
+            });
+
+            Route::prefix('/item')->group(function () {
+                Route::get('/', 'ProductController@index');
+                Route::get('/create', 'ProductController@create');
+                Route::post('/store', 'ProductController@store');
+                Route::get('/edit/{id}', 'ProductController@edit');
+                Route::post('/update/{id}', 'ProductController@update');
+                Route::delete('/delete/{id}', 'ProductController@delete');
+                Route::post('/deleteImage', 'ProductController@deleteImage');
+            });
+        });
+    });
 });
 
-Route::prefix('admin')->group(function () {
+// Route::prefix('admin')->group(function () {
 
-    Route::get('/login', function () {
-        return view('login');
-    });
-    Route::get('/register', function () {
-        return view('register');
-    });
-});
+//     Route::get('/login', function () {
+//         return view('login');
+//     });
+//     Route::get('/register', function () {
+//         return view('register');
+//     });
+// });
 
 Auth::routes();
 

@@ -9,7 +9,7 @@ class FrontController extends Controller
     //
     public function __construct()
     {
-        $this->index = 'front.index';
+        $this->index = 'front.index.index';
         $this->login = 'front.index.login';
         $this->register = 'front.index.register';
 

@@ -27,7 +27,7 @@
     <!-- ≡ -->
     <nav>
         <div id="nav" class="nav">
-            <div class="logo"></div>
+            <div class="logo" style="background-image: url({{ asset('img/front/logo.png') }})"></div>
             <div class="menu">
                 <div class="burger"></div>
             </div>
@@ -35,7 +35,7 @@
     </nav>
 
     <main>
-        <div class="banner">
+        <div class="banner" style="background-image: url({{ asset('img/front/01-homepage/banner.png') }})">
             <div class="container170">
                 <span>每年有</span>
                 <div class="mid">
@@ -55,7 +55,11 @@
                     <h2>撲殺</h2>
                 </div>
                 <a>
-                    <a href="" class="banner-btn hvr-bounce-in">
+                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();" class="banner-btn hvr-bounce-in">
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                         <p>立即幫助</p>
                     </a>
                 </a>
@@ -63,7 +67,7 @@
             <div class="grass-area">
                 <div class="scroll-line">SCROLL</div>
                 <img src="{{ asset('img/front/01-homepage/grass-1.png') }}" alt="" class="grass-1 ">
-                <img src="{{ asset('img/front/01-homepage/hover-wave.svg') }}" alt="" class="grass-2">
+                <img src="{{ asset('img/front/01-homepage/grass-2.png') }}" alt="" class="grass-2">
             </div>
         </div>
 
@@ -84,14 +88,21 @@
                     <div class="col-6 col about-us-swiper-area" style="padding: 0%;">
                         <div class="swiper-container mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide about-img about-img-1"></div>
-                                <div class="swiper-slide about-img about-img-1"></div>
-                                <div class="swiper-slide about-img about-img-1"></div>
+                                <div class="swiper-slide about-img about-img-1"
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                </div>
+                                <div class="swiper-slide about-img about-img-1"
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
+                                </div>
+                                <div class="swiper-slide about-img about-img-1"
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-3.png') }})">
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-pagination swiper-point"></div>
                         <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
-                        <div class="about-shadow"></div>
+                        <div class="about-shadow"
+                            style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                     </div>
                     <div class="col-6 col" style="padding: 0%;">
                         <div class="about-us about-us-text-area">
@@ -163,7 +174,7 @@
         <div class="second-section">
             <img src="{{ asset('img/front/01-homepage/grass-3.png') }}" class="grass-3">
             <div class="feed-cat">
-                <div class="feed-img">
+                <div class="feed-img" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
                     <img class="heart-1" src="{{ asset('img/front/01-homepage/heart-1.svg') }}">
                     <img class="heart-2" src="{{ asset('img/front/01-homepage/heart-2.svg') }}">
                 </div>
@@ -179,7 +190,7 @@
             </div>
 
             <div class="help-cat">
-                <div class="help-img">
+                <div class="help-img" style="background-image: url({{ asset('img/front/01-homepage/cat-3.png') }})">
                     <img class="sos-left" src="{{ asset('img/front/01-homepage/sos-left.svg') }}">
                     <img class="sos-right" src="{{ asset('img/front/01-homepage/sos-right.svg') }}">
 
@@ -212,7 +223,9 @@
                         <div class="news-area">
                             <div class="news-img">
                                 <img class="img" src="{{ asset('img/front/01-homepage/cat-4.png') }}">
-                                <div class="img-shadow"></div>
+                                <div class="img-shadow"
+                                    style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                                </div>
                             </div>
                             <div class="news-text">
                                 <h4>什麼是TNR？</h4>
@@ -224,7 +237,9 @@
                         <div class="news-area">
                             <div class="news-img">
                                 <img class="img" src="{{ asset('img/front/01-homepage/cat-5.png') }}">
-                                <div class="img-shadow"></div>
+                                <div class="img-shadow"
+                                    style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                                </div>
                             </div>
                             <div class="news-text">
                                 <h4>什麼是TNR？</h4>
@@ -236,7 +251,9 @@
                         <div class="news-area">
                             <div class="news-img">
                                 <img class="img" src="{{ asset('img/front/01-homepage/cat-6.png') }}">
-                                <div class="img-shadow"></div>
+                                <div class="img-shadow"
+                                    style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                                </div>
                             </div>
                             <div class="news-text">
                                 <h4>什麼是TNR？</h4>
@@ -256,7 +273,9 @@
 
     <footer>
         <div class="footer-area">
-            <div class="footer-img" style="margin: 0; padding: 0;"></div>
+            <div class="footer-img"
+                style="margin: 0; padding: 0; background-image: url({{ asset('img/front/footer/footer-wave.png') }})">
+            </div>
             <div class="container140">
                 <div class="ft-top">
                     <div class="ft-left">
@@ -295,7 +314,8 @@
                         </div>
                     </div>
                     <a href="#nav">
-                        <div class="ft-mouse">
+                        <div class="ft-mouse"
+                            style="background-image: url({{ asset('img/front/footer/mouse.png') }})">
                             <span>Top</span>
                         </div>
                     </a>
@@ -332,45 +352,7 @@
     <!-- number counter -->
 
     <script>
-        // const counters = document.querySelectorAll(".count");
-        // const speed = 200;
 
-        // counters.forEach((counter) => {
-        // 	const updateCount = () => {
-        // 		const target = +counter.getAttribute("data-target");
-        // 		const count = +counter.innerText;
-        // 		const increment = Math.trunc(target / speed);
-        // 		// console.log(increment);
-
-        // 		if (count < target) {
-        // 			counter.innerText = parseInt(count + increment);
-        // 			console.log(parseInt(count + increment));
-        // 			setTimeout(updateCount, 7);
-        // 		} else {
-        // 			counter.innerText = target;
-        // 		}
-        // 	};
-        // });
-        // $(window).scroll(function () {
-        // 	var height = $(window).scrollTop();
-        // 	console.log(height);
-        // 	if (height >= 1900) {
-        // 		$(function () {
-        // 		$('.count').each(function () {
-        // 			$(this).prop('Counter', 0).animate({
-        // 				Counter: $(this).text()
-        // 			}, {
-        // 				duration: 2000,
-        // 				easing: 'swing',
-        // 				step: function (now) {
-        // 					$(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-        // 				}
-        // 			});
-        // 		});
-
-        // 	});
-        // 	}
-        // });
     </script>
 </body>
 

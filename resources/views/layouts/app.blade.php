@@ -18,6 +18,9 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    {{-- datatable CDN --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet"
@@ -36,7 +39,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="/css/demo_1_style.css">
     <!-- End Layout styles -->
-    <link rel="shortcut icon" href="/css/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     @yield('css')
 </head>
@@ -47,9 +50,10 @@
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-start">
-                    <a class="navbar-brand brand-logo p-0" href="{{ asset('/index') }}">
-                        <img src="{{ asset('img/nav/white-logo.png') }}" alt="logo" class="w-100 px-2 mt-4" style="" /> </a>
-                    <a class="navbar-brand brand-logo-mini" href="{{ asset('/index') }}">
+                    <a class="navbar-brand brand-logo p-0" href="{{ asset('/TNR-index') }}">
+                        <img src="{{ asset('img/nav/white-logo.png') }}" alt="logo" class="w-100 px-2 mt-4"
+                            style="" /> </a>
+                    <a class="navbar-brand brand-logo-mini" href="{{ asset('/TNR-index') }}">
                         <img src="{{ asset('img/nav/logo-mini.svg') }}" alt="logo" class="w-100 px-2" /> </a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -214,7 +218,7 @@
                         </li>
                         {{-- all --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ asset('/admin/home') }}" aria-controls="all">
+                            <a class="nav-link" href="{{ asset('/TNR-admin/dashboard') }}" aria-controls="all">
                                 <i class="menu-icon typcn typcn-document-text"></i>
                                 <span class="menu-title">管理總覽</span>
                             </a>
@@ -230,13 +234,13 @@
                             <div class="collapse" id="user">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/user') }}">會員總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/user') }}">會員總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/user/create') }}">新增會員</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/user/create') }}">新增會員</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/user/edit') }}">編輯會員</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/user/edit') }}">編輯會員</a>
                                     </li>
                                 </ul>
                             </div>
@@ -379,20 +383,20 @@
                     <div class="content-wrapper">
                         <div class="row page-title-header">
                             <div class="col-12">
+                                {{-- breadcrumb --}}
                                 <div class="page-header">
-                                    <h4 class="page-title" style="w">管理總覽</h4>
+                                    @yield('page-header')
+                                    {{-- <h4 class="page-title" style="w">管理總覽</h4>
                                     <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
                                         <ul class="quick-links">
-                                            {{-- breadcrumb --}}
-                                            {{-- <li><a href="#">ICE Market data</a></li>
+                                            <li><a href="#">ICE Market data</a></li>
                                             <li><a href="#">Own analysis</a></li>
-                                            <li><a href="#">Historic market data</a></li> --}}
+                                            <li><a href="#">Historic market data</a></li>
                                         </ul>
-                                        {{-- setting --}}
                                         <ul class="quick-links ml-auto">
                                             <li><a href="#">設定</a></li>
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="col-md-12">

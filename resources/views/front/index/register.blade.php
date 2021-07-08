@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
+    <title>TNR會員註冊</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ionicons.css') }}">
@@ -56,12 +56,12 @@
                                 {{-- nick_name --}}
                                 <div class="form-group mb-4">
                                     <div class="input-group">
-                                        <label for="nick-name"
+                                        <label for="nickname"
                                             class="col-3 col-form-label text-md-right mt-1">{{ __('暱稱') }}</label>
-                                        <input id="nick-name" type="text"
-                                            class="form-control @error('name') is-invalid @enderror" name="nick-name"
-                                            value="{{ old('nick-name') }}" required autocomplete="nick-name"
-                                            autofocus placeholder="請填入使用者姓名">
+                                        <input id="nickname" type="text"
+                                            class="form-control @error('name') is-invalid @enderror" name="nickname"
+                                            value="{{ old('nickname') }}" required autocomplete="nickname"
+                                            autofocus placeholder="請填入使用者暱稱">
 
                                         @error('name')
                                             <span class="invalid-feedback ml-5 pl-5" role="alert">
@@ -75,7 +75,7 @@
                                 <div class="form-group mb-4">
                                     <div class="input-group">
                                         <label for="email"
-                                            class="col-3 col-form-label text-md-right mt-1">{{ __('Email 地址') }}</label>
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('Email 信箱') }}</label>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" required autocomplete="email"
@@ -86,6 +86,28 @@
                                                 <strong class="ml-5">{{ $message }}</strong>
                                             </span>
                                         @enderror
+                                    </div>
+                                </div>
+
+                                {{-- phone --}}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <label for="phone"
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('電話') }}</label>
+                                        <input id="phone" type="phone" class="form-control" name="phone"
+                                            value="{{ old('phone') }}" required autocomplete="phone"
+                                            placeholder="請填入常用聯絡電話">
+                                    </div>
+                                </div>
+
+                                {{-- address --}}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <label for="address"
+                                            class="col-3 col-form-label text-md-right mt-1">{{ __('地址') }}</label>
+                                        <input id="address" type="address" class="form-control" name="address"
+                                            value="{{ old('address') }}" required autocomplete="address"
+                                            placeholder="請填入通訊地址">
                                     </div>
                                 </div>
 
@@ -113,28 +135,6 @@
                                         <input id="password-confirm" type="password" class="form-control"
                                             name="password_confirmation" required autocomplete="new-password"
                                             placeholder="請再次填入密碼">
-                                    </div>
-                                </div>
-
-                                {{-- phone --}}
-                                <div class="form-group mb-4">
-                                    <div class="input-group">
-                                        <label for="phone"
-                                            class="col-3 col-form-label text-md-right mt-1">{{ __('電話') }}</label>
-                                        <input id="phone" type="phone" class="form-control" name="phone"
-                                            value="{{ old('phone') }}" required autocomplete="phone"
-                                            placeholder="請填入常用聯絡電話">
-                                    </div>
-                                </div>
-
-                                {{-- address --}}
-                                <div class="form-group mb-4">
-                                    <div class="input-group">
-                                        <label for="address"
-                                            class="col-3 col-form-label text-md-right mt-1">{{ __('地址') }}</label>
-                                        <input id="address" type="address" class="form-control" name="address"
-                                            value="{{ old('address') }}" required autocomplete="address"
-                                            placeholder="請填入通訊地址">
                                     </div>
                                 </div>
 
