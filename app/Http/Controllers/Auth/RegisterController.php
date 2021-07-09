@@ -31,6 +31,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+    // 不管發生什麼事都會去這裡
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -84,6 +85,7 @@ class RegisterController extends Controller
 
     public function redirectTo()
     {
+        // dd(123);
         $role = Auth::user()->role ?? null;
         if ($role == 'admin') {
             return '/TNR-admin/dashboard';

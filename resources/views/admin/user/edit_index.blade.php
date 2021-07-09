@@ -37,7 +37,7 @@
                                 <th>角色</th>
                                 <th>電話</th>
                                 <th>地址</th>
-                                <th>操作</th>
+                                <th style="width: 240px">操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,16 +50,22 @@
                                     <td>{{ $item->role }}</td>
                                     {{-- ??'' 如果找不到資料就顯示空白，防呆用 --}}
                                     <td>{{ $item->client->phone ?? '' }}</td>
-                                    <td>{{ $item->client->address ?? '' }}</td>
+                                    @php
+                                        $truncated = Str::limit($item->client->address ?? '', 40);
+                                        // dd($truncated );
+                                    @endphp
+                                    <td>{{ $truncated }}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm"
-                                            href="{{ asset('/TNR-admin/user/edit') }}/{{ $item->id }}">編輯</a>
+                                        <a class="btn btn-inverse-primary btn-rounded btn-fw"
+                                            href="{{ asset('/TNR-admin/user/edit') }}/{{ $item->id }}"><i
+                                                class="mdi mdi-file-document"></i>編輯</a>
                                         <form style="display: inline-block"
                                             action="{{ asset('/TNR-admin/user/delete') }}/{{ $item->id }}"
                                             method="POST">
                                             @csrf
                                             @method('delete')
-                                            <button class="btn btn-danger btn-sm">刪除</button>
+                                            <button class="btn btn-inverse-danger btn-rounded btn-fw"><i
+                                                    class="mdi mdi-alert-outline"></i>刪除</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -94,32 +100,3 @@
         });
     </script>
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

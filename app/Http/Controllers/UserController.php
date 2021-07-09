@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\UserClient;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -28,6 +29,11 @@ class UserController extends Controller
     public function editIndex()
     {
         $lists = User::get();
+        // foreach ($lists as $list => $value) {
+        //     $truncated = Str::limit($value, 10);
+        //     dd($truncated );
+        // }
+
         return view($this->editIndex, compact('lists'));
     }
 
@@ -80,5 +86,18 @@ class UserController extends Controller
         }
 
         return redirect('/TNR-admin/user')->with('message', '新增會員成功！');
+    }
+
+    public function delete($id)
+    {
+        $old_record = User::find($id);
+        if ($old_record->client) {
+            // dd($old_record->client);
+            $old_record->client->delete();
+        }
+
+        $old_record->delete();
+
+        return redirect('/TNR-admin/user/edit')->with('message', '刪除會員資料成功！');
     }
 }

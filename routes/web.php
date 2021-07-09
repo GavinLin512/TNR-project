@@ -32,13 +32,13 @@ Route::middleware(['auth'])->group(function () {
 
         Route::prefix('/user')->group(function () {
             Route::get('/', 'UserController@index');
+            Route::get('/create', 'UserController@create');
             Route::post('/store', 'UserController@store');
+            Route::get('/edit', 'UserController@editIndex');
+            Route::get('/edit/{id}', 'UserController@edit');
             Route::post('/update/{id}', 'UserController@update');
             Route::delete('/delete/{id}', 'UserController@delete');
         });
-        Route::get('/user_create', 'UserController@create');
-        Route::get('/user_edit', 'UserController@editIndex');
-        Route::get('/user_edit/{id}', 'UserController@edit');
 
         Route::prefix('/story')->group(function () {
             Route::get('/', 'StoryController@index');

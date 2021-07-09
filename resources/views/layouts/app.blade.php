@@ -214,7 +214,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item nav-category mb-2">Main Menu</li>
+                        <li class="nav-item nav-category mbz-2">Main Menu</li>
                         </li>
                         {{-- all --}}
                         <li class="nav-item">
@@ -224,36 +224,53 @@
                             </a>
                         </li>
                         {{-- user --}}
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false"
-                                aria-controls="user">
+
+                        {{-- @if (Request::has('/user*')) true @else false @endif --}}
+                        {{-- @if (Request::has('/user*')) show @endif --}}
+                        {{-- @if (Request::has('/user*')) active @endif --}}
+                        {{-- @if (Request::has('/user')) active @endif --}}
+                        {{-- @if (Request::has('/user/create')) active @endif --}}
+                        {{-- @if (Request::has('/user/edit*')) active @endif --}}
+                        @php
+                             $current = URL::current();
+                            //  $current = Request::url();
+                            // $uri = $request->path();
+                            // dd(asset('/TNR-admin/user/create'));
+                            // dd($current);
+                        @endphp
+                        {{-- URL::current(); --}}
+                        <li class="nav-item ">
+                            <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="<?php echo $current == (asset('/TNR-admin/user/')) ? 'true' : 'false'; ?>" aria-controls="user">
                                 <i class="menu-icon typcn typcn-coffee"></i>
                                 <span class="menu-title">會員管理</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="user">
+                            <div class="collapse <?php echo $current == (asset('/TNR-admin/user/')) ? 'show' : ''; ?>" id="user">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/user') }}">會員總覽</a>
+                                        {{-- @php
+                                            dd($request->path());
+                                        @endphp --}}
+                                        <a class="nav-link " href="{{ asset('/TNR-admin/user') }}">會員總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/user_create') }}">新增會員</a>
+                                        <a class="nav-link " href="{{ asset('/TNR-admin/user/create') }}">新增會員</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/user_edit') }}">編輯會員</a>
+                                        <a class="nav-link " href="{{ asset('/TNR-admin/user/edit') }}">編輯會員</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         {{-- news --}}
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#news" aria-expanded="false"
+                            <a class="nav-link" data-toggle="collapse" href="#news" aria-expanded="<?php echo $current == asset('/TNR-admin/news/') ? 'true' : 'false'; ?>"
                                 aria-controls="news">
                                 <i class="menu-icon typcn typcn-coffee"></i>
                                 <span class="menu-title">最新消息管理</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="news">
+                            <div class="collapse <?php echo $current == asset('/TNR-admin/news/') ? 'show' : ''; ?>" id="news">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ asset('/TNR-admin/news') }}">最新消息總覽</a>
@@ -439,9 +456,9 @@
                         </div>
                         {{-- main area --}}
                         @if (Session::has('message'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ Session::get('message') }}
-                                </div>
+                            <div class="alert alert-success" role="alert">
+                                {{ Session::get('message') }}
+                            </div>
                         @endif
                         @yield('main')
                         @yield('content')
