@@ -199,7 +199,7 @@
             <!-- partial -->
             <div class="container-fluid page-body-wrapper">
                 <!-- partial:partials/_sidebar.html -->
-                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <nav class="sidebar sidebar-offcanvas" id="sidebar" style="position: fixed">
                     <ul class="nav">
                         <li class="nav-item nav-profile">
                             <a href="#" class="nav-link">
