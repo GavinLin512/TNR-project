@@ -23,7 +23,7 @@
 @section('main')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-lg-10">
                 <div class="card">
                     <div class="card-header">
                         <h2>{{ __('新增會員') }}</h2>

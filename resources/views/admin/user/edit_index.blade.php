@@ -37,7 +37,7 @@
                                 <th>角色</th>
                                 <th>電話</th>
                                 <th>地址</th>
-                                <th style="width: 20%">操作</th>
+                                <th style="width: 10%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,7 +56,7 @@
                                     @endphp
                                     <td>{{ $truncated_address }}</td>
                                     <td>
-                                        <a class="btn btn-inverse-primary btn-rounded btn-fw"
+                                        <a class="btn btn-inverse-primary btn-rounded btn-fw mb-3"
                                             href="{{ asset('/TNR-admin/user/edit') }}/{{ $item->id }}"><i
                                                 class="mdi mdi-file-document"></i>編輯</a>
                                         <form style="display: inline-block"

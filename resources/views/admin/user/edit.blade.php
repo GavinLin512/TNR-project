@@ -22,7 +22,7 @@
 
 @section('main')
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-lg-10">
             <div class="card">
                 <div class="card-header">
                     <h2>{{ __('編輯會員') }}</h2>
