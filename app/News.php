@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $id
  * @property string $img
  * @property string $title
- * @property string $Y-m-d
+ * @property string $publish_date
  * @property string $content
  * @property string $created_at
  * @property string $updated_at

@@ -64,10 +64,10 @@ class NewsController extends Controller
         if ($request->hasFile('img')) {
             $path = FileController::imageUpload($request->file('img'),'news');
         }
-
+        
         News::create([
 
-            'publish_date' => date("Y-m-d"),
+            'publish_date' => $request->publish_date,
             'title' => $request->title,
             'img' => $path ?? '',
             'content' => $request->content

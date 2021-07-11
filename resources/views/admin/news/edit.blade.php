@@ -58,13 +58,6 @@
                         </div>
                     </div>
 
-                    {{-- <div class="form-group">
-                        <label for="img">{{ __('圖片') }}</label>
-                        <img style="width: 200px" src="{{ asset($record->img) }}" alt="">
-                        <input id="img" type="file" class="form-control " name="img"
-                            autocomplete="img" autofocus>
-                    </div> --}}
-
                     <div class="form-group">
                         <label for="content">{{ __('內容') }}</label>
                         <textarea class="form-control" id="content" rows="8" name="content">{{ $record->content }}</textarea>

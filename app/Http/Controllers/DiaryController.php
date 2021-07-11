@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Diary;
+use App\AssistantCategory;
+use App\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -32,7 +34,8 @@ class DiaryController extends Controller
     public function edit($id)
     {
         $record = Diary::find($id);
-        return view($this->edit, compact('record'));
+        $categories = Diary::assistant_category;
+        return view($this->edit, compact('record', 'categories'));
     }
 
     public function update(Request $request, $id)
@@ -54,7 +57,8 @@ class DiaryController extends Controller
 
     public function create()
     {
-        return view($this->create);
+        $categories = Diary::assistant_category;
+        return view($this->create, compact('categories'));
     }
 
     public function store(Request $request)
@@ -63,10 +67,10 @@ class DiaryController extends Controller
         if ($request->hasFile('img')) {
             $path = FileController::imageUpload($request->file('img'),'diary');
         }
-
+        // dd($request->content);
         Diary::create([
-
-            'publish_date' => date("Y-m-d"),
+            'assistant_category' => $request['assistant_category'],
+            'publish_date' => $request->publish_date,
             'title' => $request->title,
             'img' => $path ?? '',
             'content' => $request->content

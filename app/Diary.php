@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property integer $id
- * @property int $assistant_category_id
+ * @property int $assistant_category
  * @property string $img
  * @property string $title
  * @property string $content
@@ -25,11 +25,13 @@ class Diary extends Model
     /**
      * @var array
      */
-    protected $fillable = ['assistant_category_id', 'img', 'title', 'content', 'created_at', 'updated_at'];
 
-    public function assistantCategory()
-    {
-        return $this->hasOne('App\AssistantCategory', 'id', 'assistant_category_id');
-    }
+    const assistant_category = [
+        'adopted' => '領養',
+        'sponsored' => '助養',
+        'donated' => '助罐'
+    ];
+
+    protected $fillable = ['assistant_category', 'img', 'title', 'content', 'created_at', 'updated_at', 'publish_date'];
 
 }

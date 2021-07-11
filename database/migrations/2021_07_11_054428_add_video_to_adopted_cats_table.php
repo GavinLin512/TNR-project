@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSponsoredCatsTable extends Migration
+class AddVideoToAdoptedCatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateSponsoredCatsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sponsored_cats', function (Blueprint $table) {
-            $table->id();
-            $table->string('name')->comment('助養貓咪名字');
-            $table->integer('user_id')->comment('抓會員資料');
-            $table->integer('default_people')->comment('預設人數');
+        Schema::table('adopted_cats', function (Blueprint $table) {
+            //
             $table->longText('video_url')->comment('領養貓咪影片連結');
-            $table->timestamps();
         });
     }
 
@@ -30,6 +26,9 @@ class CreateSponsoredCatsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sponsored_cats');
+        Schema::table('adopted_cats', function (Blueprint $table) {
+            //
+            $table->dropColumn('video_url');
+        });
     }
 }

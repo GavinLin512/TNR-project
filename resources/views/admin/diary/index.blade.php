@@ -43,8 +43,11 @@
                         @foreach ($lists as $item)
                             <tr>
                                 <td>{{ $item->publish_date }}</td>
-                                <td>{{ $item->assistantCategory->category?? '' }}</td>
-                                <td>{{ $item->title }}</td>
+                                <td>{{ $item->assistant_category }}</td>
+                                @php
+                                    $truncated_title = Str::limit($item->title ?? '', 20);
+                                @endphp
+                                <td>{{ $truncated_title }}</td>
                                 <td>
                                     <img style="width: 200px" src="{{ asset($item->img) }}" alt="">
                                 </td>

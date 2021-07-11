@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAssistantCategoriesTable extends Migration
+class CreateDonatedCatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateAssistantCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('assistant_categories', function (Blueprint $table) {
+        Schema::create('donated_cats', function (Blueprint $table) {
             $table->id();
-            $table->string('category')->comment('申請種類');
+            $table->string('title')->comment('標題');
+            $table->integer('donate_price')->comment('每名額捐款金額');
+            $table->integer('people_number')->comment('需求人數');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateAssistantCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assistant_categories');
+        Schema::dropIfExists('donated_cats');
     }
 }

@@ -288,34 +288,91 @@
                                 </ul>
                             </div>
                         </li>
-                        {{-- assist --}}
+                        {{-- assistant
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#assist" aria-expanded="false"
-                                aria-controls="assist">
+                            <a class="nav-link" data-toggle="collapse" href="#assistant" aria-expanded="false"
+                                aria-controls="assistant">
                                 <i class="menu-icon typcn typcn-coffee"></i>
-                                <span class="menu-title">救助頁面管理</span>
+                                <span class="menu-title">救助分類管理</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="assist">
+                            <div class="collapse" id="assistant">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/assist') }}">救助申請總覽</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/assist/create') }}">新增救助申請</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/assist/edit') }}">編輯救助申請資料</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/assist/category') }}">救助申請種類總覽</a>
+                                        <a class="nav-link" href="{{ asset('/assistant/category') }}">救助分類總覽</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link"
-                                            href="{{ asset('/assist/category/create') }}">新增救助申請種類</a>
+                                            href="{{ asset('/assistant/category/create') }}">新增救助分類</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/assist/category/edit') }}">編輯救助申請種類</a>
+                                        <a class="nav-link" href="{{ asset('/assistant/category/edit') }}">編輯救助分類</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> --}}
+                        {{-- sponsored_cat --}}
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#sponsored_cat" aria-expanded="false"
+                                aria-controls="sponsored_cat">
+                                <i class="menu-icon typcn typcn-coffee"></i>
+                                <span class="menu-title">待助養貓咪管理</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="sponsored_cat">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/sponsored_cat') }}">待助養貓咪總覽</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/sponsored_cat/create') }}">新增待助養貓咪</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/sponsored_cat/edit') }}">編輯待助養貓咪資料</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        {{-- adopted_cat --}}
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#adopted_cat" aria-expanded="false"
+                                aria-controls="adopted_cat">
+                                <i class="menu-icon typcn typcn-coffee"></i>
+                                <span class="menu-title">待領養貓咪管理</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="adopted_cat">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/adopted_cat') }}">待領養貓咪總覽</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/adopted_cat/create') }}">新增待領養貓咪</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/adopted_cat/edit') }}">編輯待領養貓咪</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        {{-- donated_cat --}}
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#donated_cat" aria-expanded="false"
+                                aria-controls="donated_cat">
+                                <i class="menu-icon typcn typcn-coffee"></i>
+                                <span class="menu-title">待助罐貓咪管理</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="donated_cat">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/donated_cat') }}">待助罐貓咪總覽</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/donated_cat/create') }}">新增待助罐貓咪</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ asset('/donated_cat/edit') }}">編輯待助罐貓咪</a>
                                     </li>
                                 </ul>
                             </div>
@@ -338,28 +395,6 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ asset('/TNR-admin/diary/edit') }}">編輯貓貓日記</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        {{-- adopt --}}
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#adopt" aria-expanded="false"
-                                aria-controls="adopt">
-                                <i class="menu-icon typcn typcn-coffee"></i>
-                                <span class="menu-title">領養貓咪管理</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="adopt">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopt') }}">領養貓咪總覽</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopt/create') }}">新增領養貓咪</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopt/edit') }}">編輯領養貓咪</a>
                                     </li>
                                 </ul>
                             </div>
