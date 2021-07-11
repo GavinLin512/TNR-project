@@ -47,9 +47,12 @@
                                     <td>{{ $item->client->nickname ?? '' }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->role }}</td>
-                                    {{-- ??'' 如果找不到資料就顯示空白，防呆用 --}}
                                     <td>{{ $item->client->phone ?? '' }}</td>
-                                    <td>{{ $item->client->address ?? '' }}</td>
+                                    @php
+                                        $truncated_address = Str::limit($item->client->address ?? '', 40);
+                                        // dd($truncated );
+                                    @endphp
+                                    <td>{{ $truncated_address }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

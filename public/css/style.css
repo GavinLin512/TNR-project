@@ -308,6 +308,10 @@ img {
   vertical-align: middle;
   border-style: none; }
 
+p img{
+    width: 200px !important ;
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle; }

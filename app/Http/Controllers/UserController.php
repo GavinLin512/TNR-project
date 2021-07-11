@@ -29,19 +29,44 @@ class UserController extends Controller
     public function editIndex()
     {
         $lists = User::get();
-        // foreach ($lists as $list => $value) {
-        //     $truncated = Str::limit($value, 10);
-        //     dd($truncated );
-        // }
-
         return view($this->editIndex, compact('lists'));
     }
 
     public function edit($id)
     {
         $record = User::find($id);
-
+        // dd($record);
         return view($this->edit, compact('record'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $v = Validator::make($request->all(), [
+            // '欄位' => ['驗證規則']
+            'name' => ['required', 'string', 'max:255'],
+            // 'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        if ($v->fails()) {
+            return redirect()->back()->withErrors($v->errors());
+        }
+
+        $old_record = User::find($id);
+        $old_record->name = $request->name;
+        $old_record->password = Hash::make($request->password);
+        $old_record->save();
+
+        if ($old_record->role == 'user') {
+            // where()的資料是多筆資料，就算找出一筆，也會是陣列，必須先改為一筆資料才能操作
+            $old_client_record = UserClient::where('user_id', $old_record->id)->first();
+            // dd($old_client_record);
+            $old_client_record->phone = $request->phone;
+            $old_client_record->address = $request->address;
+            $old_client_record->save();
+
+        }
+
+        return redirect('/TNR-admin/user/edit')->with('message', '更新會員資料成功！');
     }
 
     public function create()
@@ -59,14 +84,10 @@ class UserController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
 
-        // dd($v);
-        // dd($v->fails());
 
         if ($v->fails()) {
             return redirect()->back()->withErrors($v->errors());
         }
-
-        // $old_record = User::find($id);
 
 
         $new_record = User::create([

@@ -37,7 +37,7 @@
                                 <th>角色</th>
                                 <th>電話</th>
                                 <th>地址</th>
-                                <th style="width: 240px">操作</th>
+                                <th style="width: 20%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,10 +51,10 @@
                                     {{-- ??'' 如果找不到資料就顯示空白，防呆用 --}}
                                     <td>{{ $item->client->phone ?? '' }}</td>
                                     @php
-                                        $truncated = Str::limit($item->client->address ?? '', 40);
+                                        $truncated_address = Str::limit($item->client->address ?? '', 40);
                                         // dd($truncated );
                                     @endphp
-                                    <td>{{ $truncated }}</td>
+                                    <td>{{ $truncated_address }}</td>
                                     <td>
                                         <a class="btn btn-inverse-primary btn-rounded btn-fw"
                                             href="{{ asset('/TNR-admin/user/edit') }}/{{ $item->id }}"><i

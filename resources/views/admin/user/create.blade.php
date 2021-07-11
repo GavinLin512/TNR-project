@@ -133,7 +133,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-outline-success btn-fw">
+                                    <button type="submit" class="btn btn-outline-success btn-fw btn-rounded ">
                                         <i class="mdi mdi-file-document"></i>新增</button>
                                 </div>
                             </div>
