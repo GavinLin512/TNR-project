@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TNR故事牆管理')
+@section('title', 'TNR編輯故事牆')
 
 @section('css')
 

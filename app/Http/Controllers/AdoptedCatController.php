@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AssistantController extends Controller
+class AdoptedCatController extends Controller
 {
     //
 }

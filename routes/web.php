@@ -40,14 +40,14 @@ Route::middleware(['auth'])->group(function () {
             Route::delete('/delete/{id}', 'UserController@delete');
         });
 
-        Route::prefix('/story')->group(function () {
-            Route::get('/', 'StoryController@index');
-            Route::get('/create', 'StoryController@create');
-            Route::post('/store', 'StoryController@store');
-            Route::get('/edit', 'StoryController@editIndex');
-            Route::get('/edit/{id}', 'StoryController@edit');
-            Route::post('/update/{id}', 'StoryController@update');
-            Route::delete('/delete/{id}', 'StoryController@delete');
+        Route::prefix('/diary')->group(function () {
+            Route::get('/', 'diaryController@index');
+            Route::get('/create', 'diaryController@create');
+            Route::post('/store', 'diaryController@store');
+            Route::get('/edit', 'diaryController@editIndex');
+            Route::get('/edit/{id}', 'diaryController@edit');
+            Route::post('/update/{id}', 'diaryController@update');
+            Route::delete('/delete/{id}', 'diaryController@delete');
         });
 
         Route::prefix('/news')->group(function () {

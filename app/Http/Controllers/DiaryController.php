@@ -2,37 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\News;
+use App\Diary;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use App\Http\Controllers\FileController;
 
-class NewsController extends Controller
+class DiaryController extends Controller
 {
     //
     function __construct()
     {
-        $this->index = 'admin.news.index';
-        $this->create = 'admin.news.create';
-        $this->editIndex = 'admin.news.edit_index';
-        $this->edit = 'admin.news.edit';
+        $this->index = 'admin.diary.index';
+        $this->create = 'admin.diary.create';
+        $this->editIndex = 'admin.diary.edit_index';
+        $this->edit = 'admin.diary.edit';
     }
 
     public function index()
     {
-        $lists = News::get();
+        $lists = Diary::get();
         return view($this->index, compact('lists'));
     }
 
     public function editIndex()
     {
-        $lists = News::get();
+        $lists = Diary::get();
         return view($this->editIndex, compact('lists'));
     }
 
     public function edit($id)
     {
-        $record = News::find($id);
+        $record = Diary::find($id);
         return view($this->edit, compact('record'));
     }
 
@@ -40,17 +39,17 @@ class NewsController extends Controller
     {
         $requestData = $request->all();
         // dd($requestData);
-        $old_newsData = News::find($id);
+        $old_diaryData = Diary::find($id);
 
         if ($request->hasFile('img')) {
-            File::delete(public_path().$old_newsData->img);
-            $path = FileController::imageUpload($request->file('img'),'news');
+            File::delete(public_path().$old_diaryData->img);
+            $path = FileController::imageUpload($request->file('img'),'diary');
             $requestData['img'] = $path;
         }
 
-        $old_newsData->update($requestData);
+        $old_diaryData->update($requestData);
 
-        return redirect('/TNR-admin/news/edit')->with('message', '編輯最新消息成功！');
+        return redirect('/TNR-admin/diary/edit')->with('message', '編輯最新消息成功！');
     }
 
     public function create()
@@ -62,10 +61,10 @@ class NewsController extends Controller
     {
         // dd($request);
         if ($request->hasFile('img')) {
-            $path = FileController::imageUpload($request->file('img'),'news');
+            $path = FileController::imageUpload($request->file('img'),'diary');
         }
 
-        News::create([
+        Diary::create([
 
             'publish_date' => date("Y-m-d"),
             'title' => $request->title,
@@ -73,15 +72,15 @@ class NewsController extends Controller
             'content' => $request->content
         ]);
 
-        return redirect('/TNR-admin/news')->with('message', '新增最新消息成功！');
+        return redirect('/TNR-admin/diary')->with('message', '新增最新消息成功！');
     }
 
     public function delete($id)
     {
-        $old_record = News::find($id);
+        $old_record = Diary::find($id);
         File::delete(public_path().$old_record->img);
         $old_record->delete();
 
-        return redirect('/TNR-admin/news/edit')->with('message', '刪除最新消息成功！');
+        return redirect('/TNR-admin/diary/edit')->with('message', '刪除最新消息成功！');
     }
 }

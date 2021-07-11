@@ -6,23 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property integer $id
+ * @property int $assistant_category_id
  * @property string $img
- * @property string $name
- * @property int $age
- * @property boolean $gender
- * @property string $location
+ * @property string $title
  * @property string $content
- * @property string $vaccine
- * @property boolean $adopt
- * @property int $user_id
  * @property string $created_at
  * @property string $updated_at
  */
-class CatRescue extends Model
+class Diary extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -30,6 +25,11 @@ class CatRescue extends Model
     /**
      * @var array
      */
-    protected $fillable = ['img', 'name', 'age', 'gender', 'location', 'content', 'vaccine', 'adopt', 'user_id', 'created_at', 'updated_at'];
+    protected $fillable = ['assistant_category_id', 'img', 'title', 'content', 'created_at', 'updated_at'];
+
+    public function assistantCategory()
+    {
+        return $this->hasOne('App\AssistantCategory', 'id', 'assistant_category_id');
+    }
 
 }

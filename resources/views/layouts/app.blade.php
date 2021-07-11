@@ -320,24 +320,24 @@
                                 </ul>
                             </div>
                         </li>
-                        {{-- story --}}
+                        {{-- diary --}}
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#story" aria-expanded="false"
-                                aria-controls="story">
+                            <a class="nav-link" data-toggle="collapse" href="#diary" @if (Request::is('TNR-admin/diary*'))aria-expanded="true"@endif
+                                aria-controls="diary">
                                 <i class="menu-icon typcn typcn-coffee"></i>
-                                <span class="menu-title">故事牆管理</span>
+                                <span class="menu-title">貓貓日記管理</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="story">
+                            <div class="collapse @if (Request::is('TNR-admin/diary*'))show @endif" id="diary">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/story') }}">故事牆總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/diary') }}">貓貓日記總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/story/create') }}">新增故事牆</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/diary/create') }}">新增貓貓日記</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/story/edit') }}">編輯故事牆</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/diary/edit') }}">編輯貓貓日記</a>
                                     </li>
                                 </ul>
                             </div>

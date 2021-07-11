@@ -13,7 +13,7 @@ class CreateCatRescuesTable extends Migration
      */
     public function up()
     {
-        Schema::create('cat_rescues', function (Blueprint $table) {
+        Schema::create('adopted_cats', function (Blueprint $table) {
             $table->id();
             $table->longtext('img')->comment('貓貓圖');
             $table->string('name')->comment('貓貓名');
@@ -22,7 +22,7 @@ class CreateCatRescuesTable extends Migration
             $table->string('location')->comment('所在縣市');
             $table->longtext('content')->comment('貓貓說明');
             $table->string('vaccine')->comment('貓貓預防針');
-            $table->boolean('adopt')->comment('貓貓是否送養(送養就消失在前端)')->nullable();
+            $table->boolean('adopt')->comment('貓貓是否被領養(被領養就消失在前端)')->nullable();
             $table->integer('user_id')->comment('抓關聯使用者的暱稱和電話');
             $table->timestamps();
         });
@@ -35,6 +35,6 @@ class CreateCatRescuesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cat_rescues');
+        Schema::dropIfExists('adopted_cats');
     }
 }
