@@ -23,7 +23,7 @@ class AdoptedCat extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -33,4 +33,15 @@ class AdoptedCat extends Model
      */
     protected $fillable = ['img', 'name', 'age', 'gender', 'location', 'content', 'vaccine', 'adopt', 'user_id', 'created_at', 'updated_at', 'video_url'];
 
+    const GENDER = [
+        'male' => '公', 'female' => '母'
+    ];
+
+    const VACCINE = [
+        'yes' => '是', 'female' => '否'
+    ];
+
+    const LOCATION = [
+        'north' => '北部區域', 'middle' => '中部區域', 'south' => '南部區域', 'east' => '東部區域'
+    ];
 }

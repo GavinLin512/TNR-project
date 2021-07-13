@@ -30,7 +30,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ asset('/TNR-admin/sponsored_cat/store') }}">
                         @csrf
-                        {{-- date --}}
+                        {{-- name --}}
                         <div class="form-group">
                             <label for="name">{{ __('貓咪名字') }}</label>
                             <input id="name" type="text" class="form-control " name="name" required autocomplete="name"

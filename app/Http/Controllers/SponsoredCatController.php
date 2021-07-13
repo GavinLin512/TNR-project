@@ -75,7 +75,7 @@ class SponsoredCatController extends Controller
             'video_url' => $request->video_url
         ]);
 
-        return redirect('/TNR-admin/sponsored_cat/edit')->with('message', '新增待助養貓咪成功！');
+        return redirect('/TNR-admin/sponsored_cat')->with('message', '新增待助養貓咪成功！');
     }
 
     public function delete($id)
