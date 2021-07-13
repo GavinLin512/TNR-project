@@ -45,8 +45,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="img">{{ __('圖片') }}</label>
-                        <img style="width: 200px" src="{{ asset($record->img) }}" alt="">
+                        <label for="img" class="mb-2">{{ __('圖片') }}</label><br>
+                        <img style="width: 200px" src="{{ asset($record->img) }}" alt="" class="mb-3">
                         <div class="input-group col-xs-12">
                             <label class="file-upload-browse btn btn-outline-info m-0">
                                 <input id="img" name="img" class="form-control" style="display:none;" type="file"
