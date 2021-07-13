@@ -17,7 +17,7 @@ class CreateSponsoredCatsTable extends Migration
             $table->id();
             $table->string('name')->comment('助養貓咪名字');
             $table->integer('user_id')->comment('抓會員資料');
-            $table->integer('default_people')->comment('預設人數');
+            $table->integer('default_people')->comment('預設人數')->nullable();
             $table->longText('video_url')->comment('領養貓咪影片連結');
             $table->timestamps();
         });

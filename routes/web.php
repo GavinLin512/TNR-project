@@ -60,6 +60,36 @@ Route::middleware(['auth'])->group(function () {
             Route::delete('/delete/{id}', 'NewsController@delete');
         });
 
+        Route::prefix('/sponsored_cat')->group(function () {
+            Route::get('/', 'SponsoredCatController@index');
+            Route::get('/create', 'SponsoredCatController@create');
+            Route::post('/store', 'SponsoredCatController@store');
+            Route::get('/edit', 'SponsoredCatController@editIndex');
+            Route::get('/edit/{id}', 'SponsoredCatController@edit');
+            Route::post('/update/{id}', 'SponsoredCatController@update');
+            Route::delete('/delete/{id}', 'SponsoredCatController@delete');
+        });
+
+        Route::prefix('/adopted_cat')->group(function () {
+            Route::get('/', 'AdoptedCatController@index');
+            Route::get('/create', 'AdoptedCatController@create');
+            Route::post('/store', 'AdoptedCatController@store');
+            Route::get('/edit', 'AdoptedCatController@editIndex');
+            Route::get('/edit/{id}', 'AdoptedCatController@edit');
+            Route::post('/update/{id}', 'AdoptedCatController@update');
+            Route::delete('/delete/{id}', 'AdoptedCatController@delete');
+        });
+
+        Route::prefix('/donated_cat')->group(function () {
+            Route::get('/', 'DonatedCatController@index');
+            Route::get('/create', 'DonatedCatController@create');
+            Route::post('/store', 'DonatedCatController@store');
+            Route::get('/edit', 'DonatedCatController@editIndex');
+            Route::get('/edit/{id}', 'DonatedCatController@edit');
+            Route::post('/update/{id}', 'DonatedCatController@update');
+            Route::delete('/delete/{id}', 'DonatedCatController@delete');
+        });
+
         Route::prefix('/product')->group(function () {
 
             Route::prefix('/category')->group(function () {

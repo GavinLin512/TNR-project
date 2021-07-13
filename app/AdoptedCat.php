@@ -17,12 +17,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $user_id
  * @property string $created_at
  * @property string $updated_at
+ * @property string $video_url
  */
 class AdoptedCat extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     *
+     * 
      * @var string
      */
     protected $keyType = 'integer';
@@ -30,6 +31,6 @@ class AdoptedCat extends Model
     /**
      * @var array
      */
-    protected $fillable = ['img', 'name', 'age', 'gender', 'location', 'content', 'vaccine', 'adopt', 'user_id', 'created_at', 'updated_at'];
+    protected $fillable = ['img', 'name', 'age', 'gender', 'location', 'content', 'vaccine', 'adopt', 'user_id', 'created_at', 'updated_at', 'video_url'];
 
 }

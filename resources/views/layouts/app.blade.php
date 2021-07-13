@@ -313,22 +313,22 @@
                         </li> --}}
                         {{-- sponsored_cat --}}
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#sponsored_cat" aria-expanded="false"
+                            <a class="nav-link" data-toggle="collapse" href="#sponsored_cat" @if (Request::is('TNR-admin/sponsored_cat*'))aria-expanded="true"@endif
                                 aria-controls="sponsored_cat">
                                 <i class="menu-icon typcn typcn-coffee"></i>
                                 <span class="menu-title">待助養貓咪管理</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="sponsored_cat">
+                            <div class="collapse @if (Request::is('TNR-admin/sponsored_cat*'))show @endif" id="sponsored_cat">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/sponsored_cat') }}">待助養貓咪總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/sponsored_cat') }}">待助養貓咪總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/sponsored_cat/create') }}">新增待助養貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/sponsored_cat/create') }}">新增待助養貓咪</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/sponsored_cat/edit') }}">編輯待助養貓咪資料</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/sponsored_cat/edit') }}">編輯待助養貓咪</a>
                                     </li>
                                 </ul>
                             </div>
@@ -344,13 +344,13 @@
                             <div class="collapse" id="adopted_cat">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopted_cat') }}">待領養貓咪總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/adopted_cat') }}">待領養貓咪總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopted_cat/create') }}">新增待領養貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/adopted_cat/create') }}">新增待領養貓咪</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/adopted_cat/edit') }}">編輯待領養貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/adopted_cat/edit') }}">編輯待領養貓咪</a>
                                     </li>
                                 </ul>
                             </div>
@@ -366,13 +366,13 @@
                             <div class="collapse" id="donated_cat">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/donated_cat') }}">待助罐貓咪總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat') }}">待助罐貓咪總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/donated_cat/create') }}">新增待助罐貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/create') }}">新增待助罐貓咪</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/donated_cat/edit') }}">編輯待助罐貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/edit') }}">編輯待助罐貓咪</a>
                                     </li>
                                 </ul>
                             </div>
