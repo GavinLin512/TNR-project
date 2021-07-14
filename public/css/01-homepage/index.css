@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .nav {
   position: absolute;
 }
@@ -198,10 +197,6 @@ main .first-section .container170 .col .about-img {
   position: relative;
 }
 
-main .first-section .container170 .col .about-img-1 {
-  background-image: url("/img/first-section/cat-1.png");
-}
-
 main .first-section .container170 .col .swiper-point {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +227,6 @@ main .first-section .container170 .col .about-shadow {
   width: 693px;
   height: 582px;
   border-radius: 40px;
-  background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 210px;
   left: -110px;
@@ -392,13 +386,8 @@ main .second-section .cat {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/second-section/cat-2.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-main .second-section .cat:nth-child(3) {
-  background-image: url("/img/second-section/cat-3.png");
 }
 
 main .second-section .cat .imgs {
@@ -550,7 +539,6 @@ main .third-section .container140 .news .news-area .news-img .img-shadow {
   width: 484px;
   height: 361px;
   border-radius: 40px;
-  background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 20px;
   left: 20px;

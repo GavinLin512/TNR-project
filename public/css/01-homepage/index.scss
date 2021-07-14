@@ -181,7 +181,7 @@ main {
 					position: relative;
 				}
 				.about-img-1 {
-					background-image: url("/img/first-section/cat-1.png");
+					// background-image: url("/img/first-section/cat-1.png");
 				}
 				// .about-img-2 {
 				// }
@@ -209,7 +209,7 @@ main {
 					width: 693px;
 					height: 582px;
 					border-radius: 40px;
-					background-image: url("/img/first-section/米色背景.jpg");
+					// background-image: url("/img/first-section/米色背景.jpg");
 					position: absolute;
 					top: 210px;
 					left: -110px;
@@ -380,11 +380,11 @@ main {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			background-image: url("/img/second-section/cat-2.png");
+			// background-image: url("/img/second-section/cat-2.png");
 			background-repeat: no-repeat;
 			background-size: cover;
 			&:nth-child(3) {
-				background-image: url("/img/second-section/cat-3.png");
+				// background-image: url("/img/second-section/cat-3.png");
 			}
 			.imgs {
 				width: 100%;
@@ -512,7 +512,7 @@ main {
 							width: 484px;
 							height: 361px;
 							border-radius: 40px;
-							background-image: url("/img/first-section/米色背景.jpg");
+							// background-image: url("/img/first-section/米色背景.jpg");
 
 							position: absolute;
 							top: 20px;

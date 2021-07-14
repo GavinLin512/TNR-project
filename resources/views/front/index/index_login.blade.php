@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('layouts.template_login')
 
 @section('title' , 'TNR 首頁')
 
@@ -152,8 +152,8 @@
         <img src="./img/second-section/grass-3.png" class="grass-3">
         <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
             <div class="imgs">
-                <img class="heart-1" src="{{asset('img/front/01-homepage/heart-1.svg')}}">
-                <img class="heart-2" src="{{asset('img/front/01-homepage/heart2.svg')}}">
+                <img class="heart-1" src="/img/second-section/heart-1.svg">
+                <img class="heart-2" src="/img/second-section/heart2.svg">
                 <div class="text-contain">
                     <div class="text-area">
                         <h3>養貓咪趣</h3>
@@ -198,7 +198,7 @@
                 <div class="col" style="padding: 0;">
                     <div class="news-area">
                         <div class="news-img">
-                            <img class="img" src="{{ asset('img/front/01-homepage/cat-4.png') }}">
+                            <img class="img" src="/img/third-section/cat4.png">
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">

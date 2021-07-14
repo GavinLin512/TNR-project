@@ -21,11 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('TNR-index')->group(function () {
     Route::get('/', 'FrontController@index');
     // 可以寫個 middleware 防止登入後進到這兩個頁面
+    // Route::get('/#' , 'FrontController@index_login');
     Route::get('/login', 'FrontController@login');
     Route::get('/register', 'FrontController@register');
 });
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth' , 'admin'])->group(function () {
     // TNR-admin
     Route::prefix('TNR-admin')->group(function () {
         Route::get('/dashboard', 'AdminController@index');
