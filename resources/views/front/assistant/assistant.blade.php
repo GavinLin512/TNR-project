@@ -350,11 +350,11 @@
                         <div class="swiper-slide">
                             <img src="{{ asset('img/front/01-homepage/cat-2.png') }}" alt="" class="img">
                         </div>
-                        <div class="swiper-slide">Slide 5</div>
+                        {{-- <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 7</div>
                         <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 9</div> --}}
                     </div>
                 </div>
                 <div class="swiper-button-next my-arrow2 arrow2-next swiper-button-white"></div>
