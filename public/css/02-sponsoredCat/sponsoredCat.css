@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1 {
   font-weight: bold;
 }
@@ -175,7 +174,6 @@ h1 {
   width: 400px;
   height: 300px;
   border-radius: 40px;
-  background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 20px;
   left: 20px;
@@ -274,7 +272,6 @@ h1 {
 .adopt-img-area .adopt-img {
   width: 100%;
   height: 135px;
-  background-image: url("/img/03-adoptCat/replace.png");
 }
 
 .second-section .title-area {
@@ -320,7 +317,6 @@ h1 {
 
 .second-section .anyang-img-area .anyang-img {
   height: 1750px;
-  background-image: url("/img/03-adoptCat/girl.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -617,7 +613,6 @@ h1 {
 .third-section .container140 .swiper-group .background .shadow {
   width: 43.5%;
   height: 547px;
-  background-image: url("/img/first-section/米色背景.jpg");
   border-radius: 30px;
   z-index: -1;
 }

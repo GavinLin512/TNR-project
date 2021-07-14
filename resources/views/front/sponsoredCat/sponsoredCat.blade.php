@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="background">
-            <img src="{{ asset('img/front/01-homepage/grass-2.png') }}" alt="">
-            <img src="{{ asset('img/front/01-homepage/grass-3.png') }}" alt="">
+            <img src="{{ asset('img/front/02-sponsoredCat/adopt-grass2.png') }}" alt="">
+            <img src="{{ asset('img/front/02-sponsoredCat/adopt-grass1.png') }}" alt="">
             <img src="{{ asset('img/front/02-sponsoredCat/yellowCat.png') }}" alt="">
         </div>
         <div class="swiper-group">
@@ -77,7 +77,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="/img/third-section/cat-6.png">
+                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="/img/third-section/cat-6.png">
+                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="/img/third-section/cat-6.png">
+                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="/img/third-section/cat-6.png">
+                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -177,7 +177,7 @@
     </div>
 
     <div class="adopt-img-area">
-        <div class="adopt-img"></div>
+        <div class="adopt-img" style="background-image: url({{ asset('img/front/02-sponsoredCat/replace.png') }})"></div>
     </div>
 
     <div class="second-section">
@@ -203,10 +203,10 @@
         </div>
 
         <div class="anyang-img-area">
-            <div class="anyang-img">
-                <img class="paralysis-cat-1" src="/img/03-adoptCat/paralysisCat-1.png">
+            <div class="anyang-img" style="background-image: url({{ asset('img/front/02-sponsoredCat/girl.png') }})">
+                <img class="paralysis-cat-1" src="{{ asset('img/front/02-sponsoredCat/paralysisCat-1.png') }}">
 
-                <img class="paralysis-cat-2" src="/img/03-adoptCat/paralysisCat-2.png">
+                <img class="paralysis-cat-2" src="{{ asset('img/front/02-sponsoredCat/paralysisCat-2.png') }}">
             </div>
         </div>
 
@@ -217,7 +217,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -246,7 +246,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -275,7 +275,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -304,7 +304,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -333,7 +333,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -362,7 +362,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -391,7 +391,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -420,7 +420,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
+                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -467,7 +467,7 @@
             <div class="swiper-group">
                 <img src="{{ asset('img/front/02-sponsoredCat/pencil.png') }}" alt="" class="img">
                 <div class="background">
-                    <div class="shadow"></div>
+                    <div class="shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                     <div class="background-text"></div>
                 </div>
                 <div class="swiper-container diarySwiper">

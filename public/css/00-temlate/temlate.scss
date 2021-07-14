@@ -321,6 +321,7 @@ footer {
 					display: flex;
 					justify-content: center;
 					align-items: flex-end;
+                    position: fixed;
 
 					span {
 						color: $color-btn-text;
@@ -458,6 +459,7 @@ footer {
 	footer {
 		.footer-area {
 			// display: none;
+            position: relative;
 			.container140 {
 				padding: 0 6.9%;
 
