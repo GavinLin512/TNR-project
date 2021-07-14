@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="background">
-            <img src="{{ asset('img/front/02-sponsoredCat/adopt-grass2.png') }}" alt="">
-            <img src="src="{{ asset('img/front/02-sponsoredCat/adopt-grass1.png') }} alt="">
+            <img src="{{ asset('img/front/01-homepage/grass-2.png') }}" alt="">
+            <img src="{{ asset('img/front/01-homepage/grass-3.png') }}" alt="">
             <img src="{{ asset('img/front/02-sponsoredCat/yellowCat.png') }}" alt="">
         </div>
         <div class="swiper-group">
@@ -77,7 +77,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
+                            <img class="img" src="/img/third-section/cat-6.png">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
+                            <img class="img" src="/img/third-section/cat-6.png">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
+                            <img class="img" src="/img/third-section/cat-6.png">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card-img">
-                            <img class="img" src="{{ asset('img/front/02-sponsoredCat/cat-6.png') }}">
+                            <img class="img" src="/img/third-section/cat-6.png">
                             <div class="play"><i class="far fa-play-circle"></i></div>
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
@@ -177,13 +177,13 @@
     </div>
 
     <div class="adopt-img-area">
-        <div class="adopt-img" style="background-image: url({{ asset('img/front/02-sponsoredCat/replace.png') }})"></div>
+        <div class="adopt-img"></div>
     </div>
 
     <div class="second-section">
         <div class="title-area">
             <div class="title-img">
-                <img src="{{ asset('img/front/02-sponsoredCat/deco-title.svg') }}">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>安養之樂</h1>
@@ -203,10 +203,10 @@
         </div>
 
         <div class="anyang-img-area">
-            <div class="anyang-img" style="background-image: url({{ asset('img/front/02-sponsoredCat/girl.png') }})">
-                <img class="paralysis-cat-1" src="{{ asset('img/front/02-sponsoredCat/paralysisCat-1.png') }}">
+            <div class="anyang-img">
+                <img class="paralysis-cat-1" src="/img/03-adoptCat/paralysisCat-1.png">
 
-                <img class="paralysis-cat-2" src="{{ asset('img/front/02-sponsoredCat/paralysisCat-2.png') }}">
+                <img class="paralysis-cat-2" src="/img/03-adoptCat/paralysisCat-2.png">
             </div>
         </div>
 
@@ -217,7 +217,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -246,7 +246,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -275,7 +275,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -304,7 +304,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -333,7 +333,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -362,7 +362,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -391,7 +391,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -420,7 +420,7 @@
                     <div class="swiper-slide">
                         <div class="donate-card">
                             <div class="card-img">
-                                <img class="donate-img" src="{{ asset('img/front/02-sponsoredCat/美貓4.jpg') }}">
+                                <img class="donate-img" src="./img/03-adoptCat/美貓4.jpg">
                                 <div class="card-shadow">
                                     <div class="play"><i class="far fa-play-circle"></i></div>
                                     <div class="shadow-text">
@@ -457,7 +457,7 @@
     <div class="third-section">
         <div class="title-area mt-200">
             <div class="title-img">
-                <img src="{{ asset('img/front/02-sponsoredCat/deco-title.svg') }}">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>貓貓日記</h1>
@@ -465,9 +465,9 @@
         </div>
         <div class="container140 position-relative">
             <div class="swiper-group">
-                <img src="{{ asset('img/front/03-assistant/pencilCAT.png') }}" alt="" class="img">
+                <img src="{{ asset('img/front/02-sponsoredCat/pencil.png') }}" alt="" class="img">
                 <div class="background">
-                    <div class="shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
+                    <div class="shadow"></div>
                     <div class="background-text"></div>
                 </div>
                 <div class="swiper-container diarySwiper">
@@ -504,11 +504,11 @@
                                     expedita?</div>
                             </div>
                         </div>
-                        {{-- <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 7</div>
                         <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div> --}}
+                        <div class="swiper-slide">Slide 9</div>
                     </div>
                 </div>
                 <div class="swiper-button-next swiper-button-white my-arrow2 arrow2-next"></div>
@@ -524,94 +524,6 @@
 
 @section('js')
 
-    {{-- <script>
-        var my_swiper = new Swiper(".catSwiper", {
-            slidesPerView: 3,
-            spaceBetween: 60,
-            // slidesPerGroup: 3,
-            width: 1400,
-            pagination: {
-                el: ".catSwiper .swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var donate_swiper = new Swiper(".donateSwiper", {
-            slidesPerView: 1,
-            slidesPerColumn: 2,
-            pagination: {
-                el: ".donateSwiper .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-father .swiper-button-next",
-                prevEl: ".swiper-father .swiper-button-prev",
-            },
-            breakpoints: {
-                1500: {
-                    slidesPerView: 2,
-                    slidesPerColumn: 2,
-
-                }
-
-            }
-        });
-
-        var diary_swiper = new Swiper(".diarySwiper", {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-
-            slidesPerView: 'auto',
-            pagination: {
-                el: ".diarySwiper .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-group .swiper-button-next",
-                prevEl: ".swiper-group .swiper-button-prev",
-            },
-        });
-
-        let menu = document.querySelector('.menu')
-        let burger = document.querySelector('.burger')
-        let burger_area = document.querySelector('.burger-area')
-        let off = document.querySelector('.off')
-
-        menu.addEventListener('click', function () {
-            // console.log(123);
-            burger.classList.remove('active');
-            burger_area.classList.add('active');
-        });
-
-        off.addEventListener('click', function () {
-            burger.classList.add('active');
-            burger_area.classList.remove('active');
-            // 停止事件，否則會一起觸發上面的事件
-            event.stopPropagation()
-        })
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function (e) {
-            $('.btns').click(function (e) {
-                e.stopPropagation();
-                $('.select-options', this).slideToggle();
-            });
-
-            $('.select-options li').click(function (e) {
-                e.stopPropagation();
-                const text_inside = $(this).text();
-                $(this).parent().slideUp();
-                $(this).parent().prev().text(text_inside);
-            });
-
-            $(document).click(function (e) {
-                $('.select-options').slideUp();
-            });
-        });
-    </script> --}}
-
     <script>
         var my_swiper = new Swiper(".catSwiper", {
             slidesPerView: 3,
@@ -699,6 +611,5 @@
             });
         });
     </script>
-
 @endsection
 
