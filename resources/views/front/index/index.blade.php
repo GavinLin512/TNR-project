@@ -37,8 +37,8 @@
         </div>
         <div class="grass-area">
             <div class="scroll-line">SCROLL</div>
-            <img src="./img/grass-1.png" alt="" class="grass-1 ">
-            <img src="./img/grass-2.png" alt="" class="grass-2">
+            <img src="{{ asset('img/front/01-homepage/grass-1.png') }}" class="grass-1 ">
+            <img src="{{ asset('img/front/01-homepage/grass-2.png') }}" class="grass-2">
         </div>
     </div>
 
@@ -223,7 +223,7 @@
                 <div class="col" style="padding: 0;">
                     <div class="news-area">
                         <div class="news-img">
-                            <img class="img" src="/img/third-section/cat-6.png">
+                            <img class="img" src="{{URL:: asset('img/front/01-homepage/cat-6.png') }}">
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">
