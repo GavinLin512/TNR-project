@@ -350,7 +350,6 @@ footer .footer-area .container140 .ft-top .ft-mouse {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: fixed;
 }
 
 footer .footer-area .container140 .ft-top .ft-mouse span {
@@ -457,9 +456,6 @@ footer .footer-area .container140 .ft-bot p {
   }
   .nav .burger-area .list .nav-btn p {
     font-size: 32px;
-  }
-  footer .footer-area {
-    position: relative;
   }
   footer .footer-area .container140 {
     padding: 0 6.9%;
