@@ -22,7 +22,7 @@ class FrontController extends Controller
 
     public function index()
     {
-        return view($this->index);
+        return view('front.index.index');
     }
 
     public function login()

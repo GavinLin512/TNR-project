@@ -26,10 +26,10 @@
 <body>
     <nav>
         <div id="nav" class="nav">
-            <div class="logo"></div>
+            <div class="logo" style="background-image: url({{ asset('img/front/logo.png') }})"></div>
             <div class="menu">
                 <div class="burger active"></div>
-                <div class="burger-area">
+                <div class="burger-area" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
                     <span class="off"><i class="fas fa-times "></i></span>
                     <div class="list">
                         <a style="margin-top: 140px;">首頁</a>
@@ -51,7 +51,7 @@
 
     <footer>
         <div class="footer-area">
-            <div class="footer-img" style="margin: 0; padding: 0;"></div>
+            <div class="footer-img" style="margin: 0; padding: 0;background-image: url({{ asset('img/front/footer/footer-wave.png') }})"></div>
             <div class="container140">
                 <div class="ft-top">
                     <div class="ft-left">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <a href="#nav">
-                        <div class="ft-mouse">
+                        <div class="ft-mouse" style="background-image: url({{asset('img/front/footer/mouse.png')}})">
                             <span>Top</span>
                         </div>
                     </a>

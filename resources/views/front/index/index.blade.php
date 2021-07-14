@@ -10,7 +10,7 @@
 @section('main')
 
 <main>
-    <div class="banner">
+    <div class="banner" style="background-image: url({{ asset('img/front/01-homepage/banner.png') }})">
         <div class="container170">
             <span>每年有</span>
             <div class="mid">
@@ -59,9 +59,9 @@
                 <div class="col col-lg-6 about-us-swiper-area" style="padding: 0%;">
                     <div class="swiper-container mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide about-img about-img-1"></div>
-                            <div class="swiper-slide about-img about-img-1"></div>
-                            <div class="swiper-slide about-img about-img-1"></div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
                         </div>
                     </div>
                     <div class="about-swiper-pagination swiper-point"></div>
@@ -150,7 +150,7 @@
 
     <div class="second-section">
         <img src="./img/second-section/grass-3.png" class="grass-3">
-        <div class="cat">
+        <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
             <div class="imgs">
                 <img class="heart-1" src="/img/second-section/heart-1.svg">
                 <img class="heart-2" src="/img/second-section/heart2.svg">
@@ -167,7 +167,7 @@
             </div>
         </div>
 
-        <div class="cat">
+        <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-3.png') }})">
             <div class="imgs">
                 <div class="text-contain">
                     <div class="text-area">
@@ -199,7 +199,7 @@
                     <div class="news-area">
                         <div class="news-img">
                             <img class="img" src="/img/third-section/cat4.png">
-                            <div class="img-shadow"></div>
+                            <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">
                             <h4>咖啡店與你攜手過中秋</h4>
@@ -212,7 +212,7 @@
                     <div class="news-area">
                         <div class="news-img">
                             <img class="img" src="/img/third-section/cat-5.png">
-                            <div class="img-shadow"></div>
+                            <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">
                             <h4>台北市貓咪協會聚會活動</h4>
@@ -224,7 +224,7 @@
                     <div class="news-area">
                         <div class="news-img">
                             <img class="img" src="/img/third-section/cat-6.png">
-                            <div class="img-shadow"></div>
+                            <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">
                             <h4>台北市貓咪協會聚會活動</h4>

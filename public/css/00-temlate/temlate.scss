@@ -1,4 +1,18 @@
-@import "_style_guide.scss";
+// @import "/_style_guide.scss";
+
+// font
+// $h1-font-size:72px;
+// $h1-font-wight:'Bold';
+
+// color
+$color-banner-gray: #707070;
+$color-banner-number: #ffa183;
+$color-light-orange: #fe886d;
+$color-dark-orange: #ff7950;
+
+$color-text: #4f4f4f;
+$color-btn-text: #ffffff;
+
 
 * {
 	box-sizing: border-box;
@@ -413,8 +427,9 @@ footer {
 	.nav {
 		.logo {
 			width: 90px;
-			height: 90px;
-			background-image: url("/img/logo-head.png");
+			height: 100px;
+            background-position-x: -6px;
+			// background-image: url("/img/logo-head.png");
 		}
 
 		.burger-area {

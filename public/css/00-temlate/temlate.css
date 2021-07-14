@@ -435,8 +435,8 @@ footer .footer-area .container140 .ft-bot p {
 @media (max-width: 576px) {
   .nav .logo {
     width: 90px;
-    height: 90px;
-    background-image: url("/img/logo-head.png");
+    height: 100px;
+    background-position-x: -6px;
   }
   .nav .burger-area {
     width: 576px;
