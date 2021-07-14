@@ -13,7 +13,7 @@
     <div class="first-section">
         <div class="title-area mt-200">
             <div class="title-img">
-                <img src="{{ asset('img/front/02-sponsoredCat/deco-title.svg') }}">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>領養之樂</h1>
@@ -465,7 +465,7 @@
         </div>
         <div class="container140 position-relative">
             <div class="swiper-group">
-                <img src="{{ asset('img/front/02-sponsoredCat/pencil.png') }}" alt="" class="img">
+                <img src="{{ asset('img/front/03-assistant/pencilCAT.png') }}" alt="" class="img">
                 <div class="background">
                     <div class="shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                     <div class="background-text"></div>
