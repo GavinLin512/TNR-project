@@ -35,7 +35,6 @@
                                 <th style="width: 15%">日期</th>
                                 <th style="width: 20%">標題</th>
                                 <th style="width: 20%">圖片</th>
-                                <th style="width: 45%">內容</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -49,11 +48,6 @@
                                     <td>
                                         <img style="width: 200px" src="{{ asset($item->img) }}" alt="">
                                     </td>
-                                    {{-- @php
-                                        $truncated_content = Str::limit($item->content ?? '', 40);
-                                        // dd($truncated );
-                                    @endphp --}}
-                                    <td class="ellipsis">{!! $item->content !!}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -62,7 +56,6 @@
                                 <th>日期</th>
                                 <th>標題</th>
                                 <th>圖片</th>
-                                <th>內容</th>
                             </tr>
                         </tfoot>
                     </table>

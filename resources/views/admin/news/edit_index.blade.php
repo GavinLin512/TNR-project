@@ -35,7 +35,6 @@
                                 <th style="width: 15%">日期</th>
                                 <th style="width: 20%">標題</th>
                                 <th style="width: 20%">圖片</th>
-                                <th style="width: 35%">內容</th>
                                 <th style="width: 10%">操作</th>
                             </tr>
                         </thead>
@@ -50,12 +49,6 @@
                                     <td>
                                         <img style="width: 200px" src="{{ asset($item->img) }}" alt="">
                                     </td>
-                                    {{-- @php
-                                        // dd($item->content);
-                                        $truncated_content = Str::limit($item->content ?? '', 40);
-                                    @endphp --}}
-                                    {{-- <td>{!! $truncated_content !!}</td> --}}
-                                    <td>{!! $item->content !!}</td>
                                     <td>
                                         <a class="btn btn-outline-primary btn-fw btn-rounded mb-3"
                                             href="{{ asset('/TNR-admin/news/edit') }}/{{ $item->id }}"><i
@@ -76,7 +69,6 @@
                                 <th>日期</th>
                                 <th>標題</th>
                                 <th>圖片</th>
-                                <th>內容</th>
                                 <th>操作</th>
                             </tr>
                         </tfoot>
