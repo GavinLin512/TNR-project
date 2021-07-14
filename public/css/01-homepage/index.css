@@ -1,8 +1,10 @@
+@charset "UTF-8";
 .nav {
   position: absolute;
 }
 
 main .banner {
+  background-image: url("/img/banner.png");
   width: 100%;
   height: 1268px;
   background-repeat: no-repeat;
@@ -181,15 +183,22 @@ main .first-section .title-area .title-text h1 {
 
 main .first-section .container170 {
   margin-top: 100px;
+  margin-bottom: 230px;
 }
 
-main .first-section .container170 .col .swiper-container {
-  width: 792px;
-  height: 675px;
+main .first-section .container170 .about-us-swiper-area .swiper-container {
+  width: 41.25vw;
+  height: 35.2vw;
 }
 
-main .first-section .container170 .col .about-img {
-  height: 675px;
+main .first-section .container170 .about-us-swiper-area .swiper-container .deco-line1 {
+  position: absolute;
+  bottom: -29px;
+  left: -29px;
+}
+
+main .first-section .container170 .about-us-swiper-area .about-img {
+  height: 35.2vw;
   border-radius: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -197,7 +206,11 @@ main .first-section .container170 .col .about-img {
   position: relative;
 }
 
-main .first-section .container170 .col .swiper-point {
+main .first-section .container170 .about-us-swiper-area .about-img-1 {
+  background-image: url("/img/first-section/cat-1.png");
+}
+
+main .first-section .container170 .about-us-swiper-area .swiper-point {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,71 +225,63 @@ main .first-section .container170 .col .swiper-point {
   margin-left: -72px;
 }
 
-main .first-section .container170 .col .swiper-point .swiper-pagination-bullet {
+main .first-section .container170 .about-us-swiper-area .swiper-point .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
   opacity: 1;
 }
 
-main .first-section .container170 .col .swiper-point .swiper-pagination-bullet-active {
+main .first-section .container170 .about-us-swiper-area .swiper-point .swiper-pagination-bullet-active {
   background-color: #fe886d;
 }
 
-main .first-section .container170 .col .about-shadow {
-  width: 693px;
-  height: 582px;
+main .first-section .container170 .about-us-swiper-area .about-shadow {
+  width: 36.1vw;
+  height: 30.31vw;
   border-radius: 40px;
-  position: absolute;
-  top: 210px;
-  left: -110px;
+  background-image: url("/img/first-section/米色背景.jpg");
+  margin-top: -28.1vw;
+  margin-left: -5.8vw;
   z-index: -1;
 }
 
-main .first-section .container170 .col .deco-line1 {
-  position: absolute;
-  z-index: 2;
-  bottom: 20vw;
-  left: -6%;
+main .first-section .container170 .about-us {
+  margin-top: 6%;
+  padding-left: 5.7%;
 }
 
-main .first-section .container170 .col .about-us {
-  width: 620px;
-  margin-top: 110px;
-}
-
-main .first-section .container170 .col .about-us h1 {
+main .first-section .container170 .about-us h1 {
   font-size: 48px;
   color: #fe886d;
 }
 
-main .first-section .container170 .col .about-us span {
+main .first-section .container170 .about-us span {
   font-size: 18px;
   color: #4f4f4f;
 }
 
-main .first-section .container170 .col .about-us .row {
+main .first-section .container170 .about-us .row {
   margin: 0;
 }
 
-main .first-section .container170 .col .about-us .top {
-  margin-bottom: 70px;
+main .first-section .container170 .about-us .top {
+  margin-bottom: 10%;
 }
 
-main .first-section .container170 .col .about-us .bot {
-  margin-bottom: 110px;
+main .first-section .container170 .about-us .bot {
+  margin-bottom: 16%;
 }
 
-main .first-section .container170 .col .about-us p {
+main .first-section .container170 .about-us p {
   font-size: 22px;
   color: #ffa183;
 }
 
-main .first-section .container170 .col .about-us .about-btn {
-  margin-top: 20px;
-  margin-bottom: 230px;
-  width: 308px;
-  height: 100px;
+main .first-section .container170 .about-us .about-btn {
+  margin-top: 3%;
+  width: 44.25%;
+  height: 14.5%;
   background-color: #ff7950;
   -webkit-box-shadow: 0px 10px 30px 0px #ff7950;
           box-shadow: 0px 10px 30px 0px #ff7950;
@@ -293,28 +298,24 @@ main .first-section .container170 .col .about-us .about-btn {
   cursor: pointer;
 }
 
-main .first-section .container170 .col .about-us .about-btn p {
+main .first-section .container170 .about-us .about-btn p {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: 4px solid #ff7950;
 }
 
-main .first-section .container170 .col .about-us .about-btn:hover p {
+main .first-section .container170 .about-us .about-btn:hover p {
   border-bottom: 4px solid #ffffff;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
 
-main .first-section .container170 .col .about-us .about-btn:hover {
+main .first-section .container170 .about-us .about-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
           box-shadow: 0px 0px 10px 0px #ff7950;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
-}
-
-main .first-section .container170 .col .about-us-text-area {
-  padding-left: 90px;
 }
 
 main .first-section .container140 .numerical-value {
@@ -386,8 +387,13 @@ main .second-section .cat {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("/img/second-section/cat-2.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main .second-section .cat:nth-child(3) {
+  background-image: url("/img/second-section/cat-3.png");
 }
 
 main .second-section .cat .imgs {
@@ -539,6 +545,7 @@ main .third-section .container140 .news .news-area .news-img .img-shadow {
   width: 484px;
   height: 361px;
   border-radius: 40px;
+  background-image: url("/img/first-section/米色背景.jpg");
   position: absolute;
   top: 20px;
   left: 20px;
@@ -632,39 +639,9 @@ main .third-section .container140 .news-btn:hover {
   main .banner .grass-area {
     margin-top: 75px;
   }
-  main .first-section .container170 .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main .first-section .container170 .row .about-us-swiper-area .deco-line1 {
-    bottom: 6%;
-  }
 }
 
-@media (max-width: 1439px) {
-  main .first-section .container140 .numerical {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1700px) and (max-width: 1200px) {
   main .third-section .container140 .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -687,7 +664,22 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1700px) and (max-width: 992px) {
+  main .first-section .container170 .about-us-swiper-area .swiper-container {
+    width: 80vw;
+    height: 68.2vw;
+  }
+  main .first-section .container170 .about-us-swiper-area .about-img {
+    height: 68.2vw;
+  }
+  main .first-section .container170 .about-us-swiper-area .swiper-point {
+    margin-left: 0px;
+  }
+  main .first-section .container170 .about-us-swiper-area .about-shadow {
+    width: 70vw;
+    height: 58.6vw;
+    margin-top: -55vw;
+  }
   main .second-section .cat .text-contain {
     bottom: -340px;
   }
@@ -706,7 +698,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1700px) and (max-width: 992px) {
   main .banner {
     height: 1000px;
   }
@@ -786,7 +778,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1700px) and (max-width: 800px) {
   main .first-section .container170 .row .col .about-us {
     width: unset;
     padding: 0% 50px;
@@ -796,7 +788,7 @@ main .third-section .container140 .news-btn:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1700px) and (max-width: 576px) {
   main .banner {
     padding-top: 150px;
     height: 952px;

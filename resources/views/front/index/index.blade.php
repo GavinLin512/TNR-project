@@ -55,57 +55,59 @@
         </div>
 
         <div class="container170">
-            <div class="row">
-                <div class="col col-lg-6 about-us-swiper-area" style="padding: 0%;">
+            <div class="d-flex justify-content-lg-between flex-column flex-lg-row position-relative">
+                <div class="about-us-swiper-area">
                     <div class="swiper-container mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
-                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
-                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                            </div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                            </div>
+                            <div class="swiper-slide about-img about-img-1" style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                            </div>
                         </div>
                     </div>
                     <div class="about-swiper-pagination swiper-point"></div>
-                    <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
                     <div class="about-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                 </div>
-                <div class="col col-lg-6" style="padding: 0%;">
-                    <div class="about-us about-us-text-area">
-                        <div class="top">
-                            <div class="row">
-                                <div class="col" style="padding: 0%;">
-                                    <h1>理念</h1>
-                                    <span>
-                                        <br>
-                                        貓是一種伴侶動物，應該為他的餘生負責和照顧，然而，有許多貓在戶外出生和死亡。每年貓屠宰數量為一年超過1,000多隻。
-                                        <br>
-                                        協會正與32名資深志工和各地湧入的愛心合作解決沒有主人貓的問題。
-                                        <br>
-                                        希望這能成為示範案例，蔓延到全台，不開心的貓數量將會減少。</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bot">
-                            <div class="row">
-                                <div class="col" style="padding: 0%;">
-                                    <h1>什麼是TNR？</h1>
-                                    <span>
-                                        <br>
-                                        Trap、Neuter、Return =捕捉/絕育/返回原位。
-                                        <br>
-                                        TNR是一個首字母縮寫詞，因為它不增加雜散貓的數量更多。這是努力進行絕育（雌性貓的避孕，雄性貓的閹割），然後將其放回原來的位置。
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <p>感謝您一直以來的支持，這裡是年度業務和財務明細。</p>
 
+                <div class="about-us">
+                    <div class="top">
 
-                        <a href="" class="about-btn">
-                            <p>查看明細</p>
-                        </a>
+                        <h1>理念</h1>
+                        <span>
+                            <br>
+                            貓是一種伴侶動物，應該為他的餘生負責和照顧，然而，有許多貓在戶外出生和死亡。每年貓屠宰數量為一年超過1,000多隻。
+                            <br>
+                            協會正與32名資深志工和各地湧入的愛心合作解決沒有主人貓的問題。
+                            <br>
+                            希望這能成為示範案例，蔓延到全台，不開心的貓數量將會減少。</span>
+
 
                     </div>
+                    <div class="bot">
+
+
+                        <h1>什麼是TNR？</h1>
+                        <span>
+                            <br>
+                            Trap、Neuter、Return =捕捉/絕育/返回原位。
+                            <br>
+                            TNR是一個首字母縮寫詞，因為它不增加雜散貓的數量更多。這是努力進行絕育（雌性貓的避孕，雄性貓的閹割），然後將其放回原來的位置。
+                        </span>
+
+
+                    </div>
+                    <p>感謝您一直以來的支持，這裡是年度業務和財務明細。</p>
+                    <a href="" class="about-btn">
+                        <p>查看明細</p>
+                    </a>
+
                 </div>
+
             </div>
         </div>
 
