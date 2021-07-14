@@ -366,13 +366,13 @@
                             <div class="collapse" id="donated_cat">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat') }}">待助罐貓咪總覽</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat') }}">待捐罐貓咪總覽</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/create') }}">新增待助罐貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/create') }}">新增待捐罐貓咪</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/edit') }}">編輯待助罐貓咪</a>
+                                        <a class="nav-link" href="{{ asset('/TNR-admin/donated_cat/edit') }}">編輯待捐罐貓咪</a>
                                     </li>
                                 </ul>
                             </div>
