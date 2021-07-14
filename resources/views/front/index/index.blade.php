@@ -46,7 +46,7 @@
         <div class="title-area">
             <div class="title-area">
                 <div class="title-img">
-                    <img src="/img/deco-title.svg">
+                    <img src="{{ asset('img/front/deco-title.svg') }}">
                 </div>
                 <div class="title-text">
                     <h1>關於協會</h1>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="about-swiper-pagination swiper-point"></div>
-                    <img src="./img/first-section/deco-line1.png" class="deco-line1">
+                    <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
                     <div class="about-shadow"></div>
                 </div>
                 <div class="col col-lg-6" style="padding: 0%;">
@@ -149,7 +149,7 @@
     </div>
 
     <div class="second-section">
-        <img src="./img/second-section/grass-3.png" class="grass-3">
+        <img src="{{ asset('img/front/01-homepage/grass-3.png') }}" class="grass-3">
         <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
             <div class="imgs">
                 <img class="heart-1" src="{{asset('img/front/01-homepage/heart-1.svg')}}">
@@ -186,7 +186,7 @@
     <div class="third-section">
         <div class="title-area">
             <div class="title-img">
-                <img src="/img/deco-title.svg">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>最新消息</h1>
