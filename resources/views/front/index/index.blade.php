@@ -153,7 +153,7 @@
         <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
             <div class="imgs">
                 <img class="heart-1" src="{{asset('img/front/01-homepage/heart-1.svg')}}">
-                <img class="heart-2" src="{{asset('img/front/01-homepage/heart2.svg')}}">
+                <img class="heart-2" src="{{asset('img/front/01-homepage/heart-2.svg')}}">
                 <div class="text-contain">
                     <div class="text-area">
                         <h3>養貓咪趣</h3>
