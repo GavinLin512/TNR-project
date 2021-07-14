@@ -106,9 +106,11 @@ h1 {
   padding-top: 30px;
   border-radius: 0 0 30px 30px;
   display: none;
+  cursor: pointer;
 }
 
 .first-section .swiper-group .btns-area .btns ul li {
+  cursor: pointer;
   width: 100%;
   font-size: 36px;
   color: #fff;
