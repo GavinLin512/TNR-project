@@ -66,7 +66,7 @@
                     </div>
                     <div class="about-swiper-pagination swiper-point"></div>
                     <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
-                    <div class="about-shadow"></div>
+                    <div class="about-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                 </div>
                 <div class="col col-lg-6" style="padding: 0%;">
                     <div class="about-us about-us-text-area">
@@ -271,51 +271,7 @@
 				clickable: true,
 			},
 		});
-
-    <!-- number counter -->
-
-    <script>
-        // const counters = document.querySelectorAll(".count");
-		// const speed = 200;
-
-		// counters.forEach((counter) => {
-		// 	const updateCount = () => {
-		// 		const target = +counter.getAttribute("data-target");
-		// 		const count = +counter.innerText;
-		// 		const increment = Math.trunc(target / speed);
-		// 		// console.log(increment);
-
-		// 		if (count < target) {
-		// 			counter.innerText = parseInt(count + increment);
-		// 			console.log(parseInt(count + increment));
-		// 			setTimeout(updateCount, 7);
-		// 		} else {
-		// 			counter.innerText = target;
-		// 		}
-		// 	};
-		// });
-		// $(window).scroll(function () {
-		// 	var height = $(window).scrollTop();
-		// 	console.log(height);
-		// 	if (height >= 1900) {
-		// 		$(function () {
-		// 		$('.count').each(function () {
-		// 			$(this).prop('Counter', 0).animate({
-		// 				Counter: $(this).text()
-		// 			}, {
-		// 				duration: 2000,
-		// 				easing: 'swing',
-		// 				step: function (now) {
-		// 					$(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-		// 				}
-		// 			});
-		// 		});
-
-		// 	});
-		// 	}
-		// });
-
     </script>
-    </script>
+
 @endsection
 

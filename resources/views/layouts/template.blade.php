@@ -33,8 +33,8 @@
                     <span class="off"><i class="fas fa-times "></i></span>
                     <div class="list">
                         <a style="margin-top: 140px;">首頁</a>
-                        <a>最新消息</a>
-                        <a>養貓咪趣</a>
+                        {{-- <a href="{{ asset() }}">最新消息</a> --}}
+                        <a href="{{ asset('/') }}">養貓咪趣</a>
                         <a>救助計畫</a>
                         <a>貓貓店鋪</a>
                         <a href="{{ asset('/TNR-index/login') }}" class="nav-btn">
