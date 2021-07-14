@@ -12,7 +12,7 @@
 <main>
     <div class="first-section max-w">
         <div class="background position-relative">
-            <div class="img position-relative">
+            <div class="img position-relative" style="background-image: url({{ asset('img/front/03-assistant/blue-wave.png') }})">
                 <span class="background-title">捐罐計畫</span>
             </div>
             <div class="links">
@@ -32,8 +32,8 @@
             <div class="swiper-wrapper ">
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})" s>
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -62,8 +62,8 @@
 
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -92,8 +92,8 @@
 
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -122,8 +122,8 @@
 
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -152,8 +152,8 @@
 
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -182,8 +182,8 @@
 
                 <div class="swiper-slide">
                     <div class="donate-can-card">
-                        <div class="donate-can-img">
-                            <img src="/img/04-assistant/feedCAt-1.png">
+                        <div class="donate-can-img" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
+                            <img src="{{ asset('img/front/03-assistant/feedCAt-1.png') }}">
                             <div class="card-shadow">
                                 <div class="shadow-text">
                                     缺 <span>1</span> 筆助養者
@@ -217,7 +217,7 @@
     <div class="second-section">
         <div class="title-area">
             <div class="title-img">
-                <img src="/img/deco-title.svg">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>申請流程</h1>
@@ -225,15 +225,15 @@
         </div>
 
         <div class="background position-relative">
-            <img src="./img/04-assistant/catchCAt.png">
-            <img src="./img/04-assistant/sleepingCAt.png">
+            <img src="{{ asset('img/front/03-assistant/catchCAt.png') }}">
+            <img src="{{ asset('img/front/03-assistant/sleepingCAt.png') }}">
             <div class="line"></div>
         </div>
 
         <div class="swiper-container applySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./img/RWD-576/helpcat-576.png" alt="">
+                    <img src="{{ asset('img/front/RWD-576/helpCAT-576.png') }}" alt="">
                     <div class="text-area">
                         <h3><span>1.</span>抓貓申請流程</h3>
                         <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
@@ -243,7 +243,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="./img/RWD-576/helpcat-576.png" alt="">
+                    <img src="{{ asset('img/front/RWD-576/helpCAT-576.png') }}" alt="">
 
                     <div class="text-area">
                         <h3><span>2.</span>自行申請罐頭餵貓</h3>
@@ -255,7 +255,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="./img/RWD-576/helpcat-576.png" alt="">
+                    <img src="{{ asset('img/front/RWD-576/helpCAT-576.png') }}" alt="">
 
                     <div class="text-area">
                         <h3><span>3.</span>申請醫通報助流程</h3>
@@ -267,7 +267,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="./img/RWD-576/helpcat-576.png" alt="">
+                    <img src="{{ asset('img/front/RWD-576/helpCAT-576.png') }}" alt="">
 
                     <div class="text-area">
                         <h3><span>4.</span>申請成為醫療醫院</h3>
@@ -282,10 +282,10 @@
         </div>
     </div>
 
-    <div class="third-section roll">
+    <div class="third-section roll" style="background-image: url({{ asset('img/front/03-assistant/loveCat.png') }})">
         <div class="thank-card">
             <div class="heart-img">
-                <img src="/img/04-assistant/Heart.png" class="img">
+                <img src="{{ asset('img/front/03-assistant/Heart.png') }}" class="img">
             </div>
             <div class="text-area">
                 <h5>謝謝你們的愛心，有你們真好</h5>
@@ -299,13 +299,13 @@
     <div class="fourth-section">
         <div class="title-area mt-200">
             <div class="title-img">
-                <img src="/img/deco-title.svg">
+                <img src="{{ asset('img/front/deco-title.svg') }}">
             </div>
             <div class="title-text">
                 <h1>貓貓日記</h1>
             </div>
         </div>
-        <div class="shadow"></div>
+        <div class="shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
         <div class="container140 position-relative">
             <div class="swiper-group">
                 <div class="swiper-container diarySwiper">
@@ -332,7 +332,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/second-section/cat-2.png" class="img">
+                            <img src="{{ asset('img/front/01-homepage/cat-2.png') }}" class="img">
                         </div>
                         <div class="swiper-slide">
                             <div class="diary-text">
@@ -348,7 +348,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/second-section/cat-2.png" alt="" class="img">
+                            <img src="{{ asset('img/front/01-homepage/cat-2.png') }}" alt="" class="img">
                         </div>
                         <div class="swiper-slide">Slide 5</div>
                         <div class="swiper-slide">Slide 6</div>
@@ -362,8 +362,8 @@
             </div>
         </div>
         <div class="background position-relative">
-            <img src="./img/04-assistant/pencilCAT.png" alt="">
-            <img src="./img/04-assistant/red-grass1.png" alt="">
+            <img src="{{ asset('img/front/03-assistant/pencilCAT.png') }}" alt="">
+            <img src="{{ asset('img/front/03-assistant/red-grass1.png') }}" alt="">
         </div>
     </div>
 </main>
