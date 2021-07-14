@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('TNR-index')->group(function () {
     Route::get('/', 'FrontController@index');
-    Route::get('/sponsored_cat', 'FrontController@sponsored_index');
-    Route::get('/donated_cat', 'FrontController@donated_index');
+    Route::get('/sponsored_cat', 'FrontController@sponsored_cat');
+    Route::get('/donated_cat', 'FrontController@assistant');
     // 可以寫個 middleware 防止登入後進到這兩個頁面
     // Route::get('/#' , 'FrontController@index_login');
     Route::get('/login', 'FrontController@login');
