@@ -524,94 +524,6 @@
 
 @section('js')
 
-    {{-- <script>
-        var my_swiper = new Swiper(".catSwiper", {
-            slidesPerView: 3,
-            spaceBetween: 60,
-            // slidesPerGroup: 3,
-            width: 1400,
-            pagination: {
-                el: ".catSwiper .swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var donate_swiper = new Swiper(".donateSwiper", {
-            slidesPerView: 1,
-            slidesPerColumn: 2,
-            pagination: {
-                el: ".donateSwiper .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-father .swiper-button-next",
-                prevEl: ".swiper-father .swiper-button-prev",
-            },
-            breakpoints: {
-                1500: {
-                    slidesPerView: 2,
-                    slidesPerColumn: 2,
-
-                }
-
-            }
-        });
-
-        var diary_swiper = new Swiper(".diarySwiper", {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-
-            slidesPerView: 'auto',
-            pagination: {
-                el: ".diarySwiper .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-group .swiper-button-next",
-                prevEl: ".swiper-group .swiper-button-prev",
-            },
-        });
-
-        let menu = document.querySelector('.menu')
-        let burger = document.querySelector('.burger')
-        let burger_area = document.querySelector('.burger-area')
-        let off = document.querySelector('.off')
-
-        menu.addEventListener('click', function () {
-            // console.log(123);
-            burger.classList.remove('active');
-            burger_area.classList.add('active');
-        });
-
-        off.addEventListener('click', function () {
-            burger.classList.add('active');
-            burger_area.classList.remove('active');
-            // 停止事件，否則會一起觸發上面的事件
-            event.stopPropagation()
-        })
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function (e) {
-            $('.btns').click(function (e) {
-                e.stopPropagation();
-                $('.select-options', this).slideToggle();
-            });
-
-            $('.select-options li').click(function (e) {
-                e.stopPropagation();
-                const text_inside = $(this).text();
-                $(this).parent().slideUp();
-                $(this).parent().prev().text(text_inside);
-            });
-
-            $(document).click(function (e) {
-                $('.select-options').slideUp();
-            });
-        });
-    </script> --}}
-
     <script>
         var my_swiper = new Swiper(".catSwiper", {
             slidesPerView: 3,
@@ -699,6 +611,8 @@
             });
         });
     </script>
+
+
 
 @endsection
 
