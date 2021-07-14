@@ -1,0 +1,720 @@
+@charset "UTF-8";
+.first-section {
+  width: 100%;
+}
+
+.first-section .background .img {
+  width: 72%;
+  height: 544px;
+  background-image: url(/img/04-assistant/blue-wave.png);
+  background-repeat: no-repeat;
+}
+
+.first-section .background .img .background-title {
+  font-size: 96px;
+  padding: 0 35px;
+  color: #ffffff;
+  background-color: #86cee8;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.first-section .background .links {
+  position: absolute;
+  top: -82.5px;
+  right: 6.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section .background .links .link {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fe886d;
+  margin-right: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fe886d;
+  font-size: 48px;
+}
+
+.first-section .background .links .active {
+  width: 165px;
+  height: 165px;
+  font-size: 108px;
+}
+
+.first-section .helpSwiper {
+  margin-top: -14.2vw;
+}
+
+.first-section .helpSwiper .swiper-slide {
+  width: 462px !important;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card {
+  background-image: url("/img/first-section/米色背景.jpg");
+  border-radius: 40px;
+  position: relative;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img {
+  padding: 30px 30px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img:hover .card-shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img:hover .donate-img {
+  -webkit-filter: contrast(0.5);
+          filter: contrast(0.5);
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img .card-shadow {
+  position: absolute;
+  bottom: 0%;
+  width: 87%;
+  color: #ffffff;
+  background-color: rgba(252, 161, 131, 0.7);
+  font-size: 32px;
+  border-radius: 0 0 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  display: none;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .donate-can-img .card-shadow span {
+  font-size: 32px;
+  padding: 0 10px;
+  background-color: #fd6739;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text {
+  border-radius: 0 0 40px 40px;
+  background-color: #ffa183;
+  padding: 54px 30px 20px;
+  margin-top: -30px;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+  font-size: 18px;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border-color: #ffffff;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number .fb-icon {
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #6d9ffe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 0 54px;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
+  width: 232px;
+  height: 67px;
+  background-color: #ff7950;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.second-section {
+  margin-top: 250px;
+  height: 100vh;
+}
+
+.second-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 7.2%;
+}
+
+.second-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.second-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+.second-section .background img:nth-child(2) {
+  position: absolute;
+  top: -168px;
+  left: 0;
+  z-index: 2;
+}
+
+.second-section .background .line {
+  width: 7.85%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ee8e74;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+}
+
+.second-section .applySwiper {
+  -webkit-transform: translateY(-560px);
+          transform: translateY(-560px);
+  margin-left: 31.5%;
+  padding-left: 35%;
+  height: 50vh;
+}
+
+.second-section .applySwiper .my-bullet {
+  width: 375px;
+  color: white;
+  margin-bottom: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.second-section .applySwiper .my-bullet::after {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: #ee8e74;
+  border: 2px solid #ee8e74;
+  background-color: #fff;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-section .applySwiper .my-bullet:nth-child(1)::after {
+  content: "1";
+}
+
+.second-section .applySwiper .my-bullet:nth-child(2)::after {
+  content: "2";
+}
+
+.second-section .applySwiper .my-bullet:nth-child(3)::after {
+  content: "3";
+}
+
+.second-section .applySwiper .my-bullet:nth-child(4)::after {
+  content: "4";
+}
+
+.second-section .applySwiper .my-bullet-active {
+  background-color: yellowgreen;
+  border-radius: 40px;
+}
+
+.second-section .applySwiper .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.second-section .applySwiper img {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+
+.second-section .applySwiper .text-area h3 {
+  color: #4f4f4f;
+  font-size: 48px;
+}
+
+.second-section .applySwiper .text-area h3 span {
+  color: #fe886d;
+  font-size: 56px;
+  margin-right: 10px;
+}
+
+.second-section .applySwiper .text-area p {
+  font-size: 18px;
+  padding: 50px 21.78% 0 0;
+  color: #4f4f4f;
+}
+
+.roll {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.third-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/04-assistant/loveCat.png");
+  position: relative;
+}
+
+.third-section .thank-card {
+  position: relative;
+}
+
+.third-section .thank-card .heart-img {
+  position: absolute;
+  top: 130px;
+  right: 16%;
+}
+
+.third-section .thank-card .text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 450px;
+  right: 25%;
+}
+
+.third-section .thank-card .text-area h5 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.third-section .thank-card .text-area .thank-btn {
+  margin-top: 40px;
+}
+
+.third-section .thank-card .text-area .thank-btn .btn {
+  width: 232px;
+  height: 67px;
+  background-color: #fe886d;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.third-section .thank-card .text-area .thank-btn .btn:hover p {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.third-section .thank-card .text-area .thank-btn .btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff7950;
+          box-shadow: 0px 0px 10px 0px #ff7950;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.fourth-section {
+  margin-bottom: 240px;
+}
+
+.fourth-section .title-area {
+  width: 428px;
+  height: 130px;
+  margin: auto;
+  margin-top: 240px;
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.fourth-section .title-area .title-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.fourth-section .title-area .title-text h1 {
+  color: #4f4f4f;
+  font-size: 72px;
+}
+
+.fourth-section .shadow {
+  width: 18.5%;
+  height: 17.3vw;
+  background-image: url("/img/first-section/米色背景.jpg");
+  border-radius: 30px;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper {
+  margin-top: -14%;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide {
+  width: 50%;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .img {
+  width: 100%;
+  height: 34.9vw;
+  border-radius: 0 20px 20px 0;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text {
+  padding: 14.6% 12.3% 0px;
+  height: 34.9vw;
+  color: #fff;
+  background-color: #ffa183;
+  border-radius: 20px 0 0 20px;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .sub-title {
+  padding: 6px 15.8px;
+  font-size: 18px;
+  background-color: #ee815b;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .sub .date {
+  font-size: 18px;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .title {
+  font-size: 48px;
+  margin: 10px 0 6.5%;
+}
+
+.fourth-section .container140 .swiper-group .diarySwiper .swiper-slide .diary-text .text {
+  font-size: 18px;
+}
+
+.fourth-section .container140 .swiper-group .my-arrow2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ff7950;
+  -webkit-box-shadow: 0 0 15px 0 #ff7950;
+          box-shadow: 0 0 15px 0 #ff7950;
+  opacity: 0.4;
+  position: absolute;
+  top: 45%;
+}
+
+.fourth-section .container140 .swiper-group .my-arrow2:hover {
+  -webkit-box-shadow: 0 0 5px 0 #ff7950;
+          box-shadow: 0 0 5px 0 #ff7950;
+  opacity: 0.8;
+}
+
+.fourth-section .background {
+  margin-top: -189px;
+}
+
+.fourth-section .background img:nth-child(1) {
+  position: relative;
+  left: 23.2%;
+  z-index: 1;
+}
+
+.fourth-section .background img:nth-child(2) {
+  margin-top: 19px;
+  margin-left: calc(100% - 491px);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1864px) {
+  .second-section .background .line {
+    left: 55%;
+  }
+}
+
+@media (max-width: 1766px) {
+  .second-section .background .line {
+    left: 58%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .third-section .thank-card .text-area {
+    right: 25%;
+  }
+  .fourth-section .container140 .swiper-group .my-arrow2 {
+    width: 60px;
+    height: 60px;
+    --swiper-navigation-size: 10px;
+  }
+}
+
+@media (max-width: 1486px) {
+  .second-section .background img:nth-child(1) {
+    display: none;
+  }
+  .second-section .background img:nth-child(2) {
+    left: 41%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0;
+  }
+  .second-section .background .line {
+    display: none;
+  }
+  .second-section .applySwiper {
+    -webkit-transform: translateY(169px);
+            transform: translateY(169px);
+    margin-left: unset;
+    padding-left: unset;
+    height: 52vw;
+  }
+  .second-section .applySwiper img {
+    width: 48.6vw;
+    display: block;
+    border-radius: 20px;
+  }
+  .second-section .applySwiper .text-area h3 {
+    color: #4f4f4f;
+    font-size: 48px;
+  }
+  .second-section .applySwiper .text-area h3 span {
+    color: #fe886d;
+    font-size: 56px;
+    margin-right: 10px;
+  }
+  .second-section .applySwiper .text-area p {
+    font-size: 18px;
+    padding: unset;
+    color: #4f4f4f;
+  }
+  .second-section .applySwiper .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 1260px) {
+  .first-section .background .img {
+    width: 100%;
+    height: 40.7vw;
+  }
+  .first-section .background .img .background-title {
+    font-size: 72px;
+    padding: 0 14px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .first-section .background .links {
+    top: -82.5px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .second-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  .second-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  .second-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+  .third-section .thank-card .text-area {
+    right: 30%;
+  }
+  .fourth-section .title-area {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20%;
+  }
+  .fourth-section .title-area .title-text {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+  }
+  .fourth-section .title-area .title-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-number p {
+    font-size: 12px;
+  }
+  .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area p {
+    font-size: 12px;
+  }
+  .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area h6 {
+    font-size: 15px;
+  }
+  .first-section .helpSwiper .swiper-slide .donate-can-card .bg-text .text-area .donate-btn .btn {
+    width: 111px;
+    height: 35px;
+  }
+  .third-section .thank-card .heart-img {
+    right: 12%;
+  }
+  .third-section .thank-card .text-area {
+    top: 480px;
+    right: 29%;
+  }
+}
+
+@media (max-width: 650px) {
+  .first-section .background .links .link {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .first-section .background .links .active {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+  }
+  .first-section .background .img .background-title {
+    font-size: 30px;
+  }
+  .third-section .thank-card .heart-img {
+    right: -8%;
+  }
+  .third-section .thank-card .text-area {
+    top: 480px;
+    right: 35%;
+  }
+  .third-section .thank-card .text-area h5 {
+    font-size: 15px;
+  }
+  .third-section .thank-card .text-area .thank-btn .btn {
+    width: 75px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .first-section .background .img .background-title {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=assistant.css.map */
