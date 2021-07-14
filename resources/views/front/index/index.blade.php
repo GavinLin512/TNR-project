@@ -211,7 +211,7 @@
                 <div class="col" style="padding: 0;">
                     <div class="news-area">
                         <div class="news-img">
-                            <img class="img" src="/img/third-section/cat-5.png">
+                            <img class="img" src="{{URL:: asset('img/front/01-homepage/cat-5.png') }}">
                             <div class="img-shadow" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                         </div>
                         <div class="news-text">
