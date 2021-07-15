@@ -32,10 +32,10 @@
                 <div class="burger-area" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
                     <span class="off"><i class="fas fa-times "></i></span>
                     <div class="list">
-                        <a style="margin-top: 140px;">首頁</a>
-                        <a>最新消息</a>
-                        <a>養貓咪趣</a>
-                        <a>救助計畫</a>
+                        <a style="margin-top: 140px;" href="{{ asset('/TNR-index') }}">首頁</a>
+                        {{-- <a>最新消息</a> --}}
+                        <a href="{{ asset('/TNR-index/sponsored_cat') }}">養貓咪趣</a>
+                        <a href="{{ asset('/TNR-index/assistant') }}">救助計畫</a>
                         <a>貓貓店鋪</a>
                         <a class="nav-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
