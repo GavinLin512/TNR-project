@@ -33,8 +33,8 @@
                         <thead>
                             <tr>
                                 <th style="width: 15%">日期</th>
-                                <th style="width: 20%">標題</th>
-                                <th style="width: 20%">圖片</th>
+                                <th style="width: 35%">標題</th>
+                                <th style="width: 40%">圖片</th>
                                 <th style="width: 10%">操作</th>
                             </tr>
                         </thead>
