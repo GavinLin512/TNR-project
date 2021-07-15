@@ -169,7 +169,7 @@
                         </div>
                         <a class="btn">我要領養</a>
                     </div>
-                    <div class="swiper-slide">Slide 5</div>
+                    {{-- <div class="swiper-slide">Slide 5</div> --}}
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
