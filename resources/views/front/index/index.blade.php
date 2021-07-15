@@ -180,7 +180,6 @@
                         <p>查看明細</p>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
@@ -256,6 +255,7 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
 			pagination: {
 				el: ".about-swiper-pagination",
 			},
