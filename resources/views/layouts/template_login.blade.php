@@ -32,7 +32,7 @@
                 <div class="burger-area" style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})">
                     <span class="off"><i class="fas fa-times "></i></span>
                     <div class="list">
-                        <a style="margin-top: 140px;" href="{{ asset('/TNR-index') }}">首頁</a>
+                        <a style="margin-top: 140px;" href="{{ asset('/TNR-index/l') }}">首頁</a>
                         {{-- <a>最新消息</a> --}}
                         <a href="{{ asset('/TNR-index/sponsored_cat') }}">養貓咪趣</a>
                         <a href="{{ asset('/TNR-index/assistant') }}">救助計畫</a>
