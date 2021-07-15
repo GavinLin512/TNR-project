@@ -23,7 +23,7 @@ Route::prefix('TNR-index')->group(function () {
     Route::get('/sponsored_cat', 'FrontController@sponsored_cat');
     Route::get('/assistant', 'FrontController@assistant');
     // 可以寫個 middleware 防止登入後進到這兩個頁面
-    // Route::get('/#' , 'FrontController@index_login');
+    Route::get('/L' , 'FrontController@index_login');
     Route::get('/login', 'FrontController@login');
     Route::get('/register', 'FrontController@register');
 });

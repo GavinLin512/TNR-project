@@ -10,6 +10,7 @@ class FrontController extends Controller
     public function __construct()
     {
         $this->index = 'front.index.index';
+        $this->index_login = 'front.index.index_login';
         $this->sponsored_cat = 'front.sponsoredCat.sponsoredCat';
         $this->assistant = 'front.assistant.assistant';
         // $this->index_login = 'front.index.index_login';
@@ -26,6 +27,11 @@ class FrontController extends Controller
     public function index()
     {
         return view($this->index);
+    }
+
+    public function index_login()
+    {
+        return view($this->index_login);
     }
 
     public function sponsored_cat()

@@ -66,7 +66,7 @@ class LoginController extends Controller
         if ($role == 'admin') {
             return '/TNR-admin/dashboard';
         } elseif ($role == 'user') {
-            return '/TNR-index';
+            return '/TNR-index/L';
         } else {
             return '/TNR-index/login';
         }
