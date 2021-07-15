@@ -67,7 +67,7 @@ class SponsoredCatController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->sponsor);
+        // dd($request->video_url);
         // SponsoredCat::create($request->all());
         SponsoredCat::create([
             'name' => $request->name,
