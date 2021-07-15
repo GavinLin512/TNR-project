@@ -26,7 +26,7 @@ class SponsoredCat extends Model
     /**
      * @var array
      */
-    protected $fillable = ['name', 'user_id', 'default_people', 'video_url', 'created_at', 'updated_at', 'sponsor'];
+    protected $fillable = ['name', 'user_id', 'default_people', 'video_url', 'created_at', 'updated_at'];
 
     // public function user()
     // {
