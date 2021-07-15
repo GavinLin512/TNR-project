@@ -400,7 +400,7 @@
                             </div>
                         </li>
                         {{-- product --}}
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="false"
                                 aria-controls="product">
                                 <i class="menu-icon typcn typcn-coffee"></i>
@@ -430,7 +430,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> --}}
                     </ul>
                 </nav>
                 <!-- partial -->
