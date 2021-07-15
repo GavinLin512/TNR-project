@@ -37,10 +37,20 @@
                         <a href="{{ asset('/TNR-index/sponsored_cat') }}">養貓咪趣</a>
                         <a href="{{ asset('/TNR-index/assistant') }}">救助計畫</a>
                         <a>貓貓店鋪</a>
+                        @guest
                         <a href="{{ asset('/TNR-index/login') }}" class="nav-btn">
                             <p>會員登入</p>
-                            <!-- <p>會員登出</p> -->
                         </a>
+                        @else
+                        <a class="nav-btn" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                            <p>會員登出</p>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </a>
+                        @endguest
                     </div>
                 </div>
             </div>
