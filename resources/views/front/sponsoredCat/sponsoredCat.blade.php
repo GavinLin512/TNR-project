@@ -572,23 +572,6 @@
             },
         });
 
-        let menu = document.querySelector('.menu')
-        let burger = document.querySelector('.burger')
-        let burger_area = document.querySelector('.burger-area')
-        let off = document.querySelector('.off')
-
-        menu.addEventListener('click', function () {
-            // console.log(123);
-            burger.classList.remove('active');
-            burger_area.classList.add('active');
-        });
-
-        off.addEventListener('click', function () {
-            burger.classList.add('active');
-            burger_area.classList.remove('active');
-            // 停止事件，否則會一起觸發上面的事件
-            event.stopPropagation()
-        })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
