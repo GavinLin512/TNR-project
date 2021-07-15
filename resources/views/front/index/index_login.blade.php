@@ -37,8 +37,8 @@
             </div>
             <div class="grass-area">
                 <div class="scroll-line">SCROLL</div>
-                <img src="./img/grass-1.png" alt="" class="grass-1 ">
-                <img src="./img/grass-2.png" alt="" class="grass-2">
+                <img src="{{ asset('img/front/01-homepage/grass-1.png') }}" class="grass-1 ">
+                <img src="{{ asset('img/front/01-homepage/grass-2.png') }}" class="grass-2">
             </div>
         </div>
 
@@ -46,7 +46,7 @@
             <div class="title-area">
                 <div class="title-area">
                     <div class="title-img">
-                        <img src="/img/deco-title.svg">
+                        <img src="{{ asset('img/front/deco-title.svg') }}">
                     </div>
                     <div class="title-text">
                         <h1>關於協會</h1>
@@ -55,60 +55,63 @@
             </div>
 
             <div class="container170">
-                <div class="row">
-                    <div class="col col-lg-6 about-us-swiper-area" style="padding: 0%;">
+                <div class="d-flex justify-content-lg-between flex-column flex-lg-row position-relative">
+                    <div class="about-us-swiper-area">
                         <div class="swiper-container mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide about-img about-img-1"
-                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                    <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                                </div>
                                 <div class="swiper-slide about-img about-img-1"
-                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                    <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                                </div>
                                 <div class="swiper-slide about-img about-img-1"
-                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})"></div>
+                                    style="background-image: url({{ asset('img/front/01-homepage/cat-1.png') }})">
+                                    <img src="{{ asset('img/front/01-homepage/deco-line1.png') }}" class="deco-line1">
+                                </div>
                             </div>
                         </div>
                         <div class="about-swiper-pagination swiper-point"></div>
-                        <img src="./img/first-section/deco-line1.png" class="deco-line1">
-                        <div class="about-shadow"></div>
+                        <div class="about-shadow"
+                            style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                     </div>
-                    <div class="col col-lg-6" style="padding: 0%;">
-                        <div class="about-us about-us-text-area">
-                            <div class="top">
-                                <div class="row">
-                                    <div class="col" style="padding: 0%;">
-                                        <h1>理念</h1>
-                                        <span>
-                                            <br>
-                                            貓是一種伴侶動物，應該為他的餘生負責和照顧，然而，有許多貓在戶外出生和死亡。每年貓屠宰數量為一年超過1,000多隻。
-                                            <br>
-                                            協會正與32名資深志工和各地湧入的愛心合作解決沒有主人貓的問題。
-                                            <br>
-                                            希望這能成為示範案例，蔓延到全台，不開心的貓數量將會減少。</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bot">
-                                <div class="row">
-                                    <div class="col" style="padding: 0%;">
-                                        <h1>什麼是TNR？</h1>
-                                        <span>
-                                            <br>
-                                            Trap、Neuter、Return =捕捉/絕育/返回原位。
-                                            <br>
-                                            TNR是一個首字母縮寫詞，因為它不增加雜散貓的數量更多。這是努力進行絕育（雌性貓的避孕，雄性貓的閹割），然後將其放回原來的位置。
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>感謝您一直以來的支持，這裡是年度業務和財務明細。</p>
 
+                    <div class="about-us">
+                        <div class="top">
 
-                            <a href="" class="about-btn">
-                                <p>查看明細</p>
-                            </a>
+                            <h1>理念</h1>
+                            <span>
+                                <br>
+                                貓是一種伴侶動物，應該為他的餘生負責和照顧，然而，有許多貓在戶外出生和死亡。每年貓屠宰數量為一年超過1,000多隻。
+                                <br>
+                                協會正與32名資深志工和各地湧入的愛心合作解決沒有主人貓的問題。
+                                <br>
+                                希望這能成為示範案例，蔓延到全台，不開心的貓數量將會減少。</span>
+
 
                         </div>
+                        <div class="bot">
+
+
+                            <h1>什麼是TNR？</h1>
+                            <span>
+                                <br>
+                                Trap、Neuter、Return =捕捉/絕育/返回原位。
+                                <br>
+                                TNR是一個首字母縮寫詞，因為它不增加雜散貓的數量更多。這是努力進行絕育（雌性貓的避孕，雄性貓的閹割），然後將其放回原來的位置。
+                            </span>
+
+
+                        </div>
+                        <p>感謝您一直以來的支持，這裡是年度業務和財務明細。</p>
+                        <a href="" class="about-btn">
+                            <p>查看明細</p>
+                        </a>
+
                     </div>
+
                 </div>
             </div>
 
@@ -151,11 +154,11 @@
         </div>
 
         <div class="second-section">
-            <img src="./img/second-section/grass-3.png" class="grass-3">
+            <img src="{{ asset('img/front/01-homepage/grass-3.png') }}" class="grass-3">
             <div class="cat" style="background-image: url({{ asset('img/front/01-homepage/cat-2.png') }})">
                 <div class="imgs">
-                    <img class="heart-1" src="/img/second-section/heart-1.svg">
-                    <img class="heart-2" src="/img/second-section/heart2.svg">
+                    <img class="heart-1" src="{{ asset('img/front/01-homepage/heart-1.svg') }}">
+                    <img class="heart-2" src="{{ asset('img/front/01-homepage/heart-2.svg') }}">
                     <div class="text-contain">
                         <div class="text-area">
                             <h3>養貓咪趣</h3>
@@ -188,7 +191,7 @@
         <div class="third-section">
             <div class="title-area">
                 <div class="title-img">
-                    <img src="/img/deco-title.svg">
+                    <img src="{{ asset('img/front/deco-title.svg') }}">
                 </div>
                 <div class="title-text">
                     <h1>最新消息</h1>
@@ -200,7 +203,7 @@
                     <div class="col" style="padding: 0;">
                         <div class="news-area">
                             <div class="news-img">
-                                <img class="img" src="/img/third-section/cat4.png">
+                                <img class="img" src="{{ URL::asset('img/front/01-homepage/cat-4.png') }}">
                                 <div class="img-shadow"
                                     style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                             </div>
@@ -214,7 +217,7 @@
                     <div class="col" style="padding: 0;">
                         <div class="news-area">
                             <div class="news-img">
-                                <img class="img" src="/img/third-section/cat-5.png">
+                                <img class="img" src="{{ URL::asset('img/front/01-homepage/cat-5.png') }}">
                                 <div class="img-shadow"
                                     style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                             </div>
@@ -227,7 +230,7 @@
                     <div class="col" style="padding: 0;">
                         <div class="news-area">
                             <div class="news-img">
-                                <img class="img" src="/img/third-section/cat-6.png">
+                                <img class="img" src="{{ URL::asset('img/front/01-homepage/cat-6.png') }}">
                                 <div class="img-shadow"
                                     style="background-image: url({{ asset('img/front/01-homepage/米色背景.jpg') }})"></div>
                             </div>
