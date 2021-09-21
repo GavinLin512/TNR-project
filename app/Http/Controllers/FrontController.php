@@ -34,6 +34,7 @@ class FrontController extends Controller
         return view($this->index_login);
     }
 
+
     public function sponsored_cat()
     {
         return view($this->sponsored_cat);
